@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Task2Suite" verbose="1">
+  <test name="Task2Tests">
+    <classes>
+      <class name="restassured.LoginTest"/>
+      <class name="restassured.Register"/>
+      <class name="restassured.GetListAllObjectTest"/>
+      <class name="restassured.ListOfObjectsByIdsTest"/>
+      <class name="restassured.GetSingleObjectTest"/>
+      <class name="restassured.AddObjectTest"/>
+      <class name="restassured.UpdateObjectTest"/>
+      <class name="restassured.PartiallyUpdateObjectTest"/>
+      <class name="restassured.DeleteObjectTest"/>
+      <class name="restassured.GetAllDepartmentTest"/>
+    </classes>
+  </test>
+</suite>

@@ -20,6 +20,12 @@
             <version>7.11.0</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+          <groupId>io.rest-assured</groupId>
+          <artifactId>rest-assured</artifactId>
+          <version>5.5.1</version>
+          <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -30,8 +36,10 @@
               <artifactId>maven-surefire-plugin</artifactId>
               <version>3.5.3</version>
               <configuration>
+                <forkCount>0</forkCount>
                 <suiteXmlFiles>
-                    <suiteXmlFiles>src/test/resources/testng_simple_suite.xml</suiteXmlFiles>
+                    <!-- <suiteXmlFiles>src/test/resources/testng_simple_suite.xml</suiteXmlFiles> -->
+                    <suiteXmlFiles>src/test/resources/task2_suite.xml</suiteXmlFiles>
                 </suiteXmlFiles>
               </configuration>
             </plugin>

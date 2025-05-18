@@ -1,5 +1,15 @@
 /Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/data/Product.java
 /Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/data_provider/DataProviderSample.java
+/Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/restassured/AddObjectTest.java
+/Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/restassured/DeleteObjectTest.java
+/Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/restassured/GetAllDepartmentTest.java
+/Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/restassured/GetListAllObjectTest.java
+/Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/restassured/GetSingleObjectTest.java
+/Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/restassured/ListOfObjectsByIdsTest.java
+/Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/restassured/LoginTest.java
+/Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/restassured/PartiallyUpdateObjectTest.java
+/Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/restassured/Register.java
+/Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/restassured/UpdateObjectTest.java
 /Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/retry_mecanism/RetrySample.java
 /Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/testng/AssertTest.java
 /Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/testng/DataProviderTest.java

@@ -1,118 +1,436 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="7.379" tests="10" errors="0" skipped="2" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="15.701" tests="12" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="java.specification.version" value="23"/>
+    <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/salsa/Documents/AfterOffice/Project/testngprogram/target/test-classes:/Users/salsa/Documents/AfterOffice/Project/testngprogram/target/classes:/Users/salsa/.m2/repository/org/testng/testng/7.11.0/testng-7.11.0.jar:/Users/salsa/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/salsa/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/Users/salsa/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:"/>
+    <property name="java.class.path" value="/Users/salsa/Library/Application Support/Code/User/globalStorage/pleiades.java-extension-pack-jdk/maven/latest/boot/plexus-classworlds-2.8.0.jar"/>
     <property name="java.vm.vendor" value="Homebrew"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
     <property name="user.timezone" value="Asia/Jakarta"/>
+    <property name="maven.conf" value="/Users/salsa/Library/Application Support/Code/User/globalStorage/pleiades.java-extension-pack-jdk/maven/latest/conf"/>
+    <property name="java.vm.specification.version" value="21"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="java.vm.specification.version" value="23"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ID"/>
-    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/salsa/Documents/AfterOffice/Project/testngprogram/target/surefire/surefirebooter-20250512151119796_3.jar /Users/salsa/Documents/AfterOffice/Project/testngprogram/target/surefire 2025-05-12T15-11-19_746-jvmRun1 surefire-20250512151119796_1tmp surefire_0-20250512151119796_2tmp"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk@21/21.0.6/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/salsa/Documents/AfterOffice/Project/testngprogram/target/test-classes:/Users/salsa/Documents/AfterOffice/Project/testngprogram/target/classes:/Users/salsa/.m2/repository/org/testng/testng/7.11.0/testng-7.11.0.jar:/Users/salsa/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/salsa/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/Users/salsa/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:"/>
+    <property name="maven.home" value="/Users/salsa/Library/Application Support/Code/User/globalStorage/pleiades.java-extension-pack-jdk/maven/latest"/>
+    <property name="surefire.test.class.path" value="/Users/salsa/Documents/AfterOffice/Project/testngprogram/target/test-classes:/Users/salsa/Documents/AfterOffice/Project/testngprogram/target/classes:/Users/salsa/.m2/repository/org/testng/testng/7.11.0/testng-7.11.0.jar:/Users/salsa/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/salsa/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/Users/salsa/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/salsa/.m2/repository/io/rest-assured/rest-assured/5.5.1/rest-assured-5.5.1.jar:/Users/salsa/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/Users/salsa/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/Users/salsa/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/salsa/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/salsa/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/salsa/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/salsa/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/salsa/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/salsa/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/salsa/.m2/repository/io/rest-assured/json-path/5.5.1/json-path-5.5.1.jar:/Users/salsa/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/Users/salsa/.m2/repository/io/rest-assured/rest-assured-common/5.5.1/rest-assured-common-5.5.1.jar:/Users/salsa/.m2/repository/io/rest-assured/xml-path/5.5.1/xml-path-5.5.1.jar:/Users/salsa/.m2/repository/org/apache/commons/commons-lang3/3.16.0/commons-lang3-3.16.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/salsa"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.version.date" value="2025-01-21"/>
-    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/23.0.2/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk@21/21.0.6/libexec/openjdk.jdk/Contents/Home"/>
     <property name="file.separator" value="/"/>
     <property name="basedir" value="/Users/salsa/Documents/AfterOffice/Project/testngprogram"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/salsa/Documents/AfterOffice/Project/testngprogram/target/surefire/surefirebooter-20250512151119796_3.jar"/>
+    <property name="apple.awt.application.name" value="Launcher"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="java.runtime.version" value="23.0.2"/>
+    <property name="java.runtime.version" value="21.0.6"/>
     <property name="user.name" value="salsa"/>
     <property name="stdout.encoding" value="UTF-8"/>
     <property name="path.separator" value=":"/>
     <property name="os.version" value="13.5"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
     <property name="java.vendor.version" value="Homebrew"/>
     <property name="localRepository" value="/Users/salsa/.m2/repository"/>
     <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
     <property name="java.io.tmpdir" value="/var/folders/0h/063c3np959bbg7_4pknqdjfr0000gn/T/"/>
-    <property name="java.version" value="23.0.2"/>
+    <property name="java.version" value="21.0.6"/>
     <property name="user.dir" value="/Users/salsa/Documents/AfterOffice/Project/testngprogram"/>
     <property name="os.arch" value="aarch64"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/salsa/Documents/AfterOffice/Project/testngprogram"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/salsa/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="UTF-8"/>
     <property name="java.vendor" value="Homebrew"/>
-    <property name="java.vm.version" value="23.0.2"/>
+    <property name="java.vm.version" value="21.0.6"/>
+    <property name="classworlds.conf" value="/Users/salsa/Library/Application Support/Code/User/globalStorage/pleiades.java-extension-pack-jdk/maven/latest/bin/m2.conf"/>
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="library.jansi.path" value="/Users/salsa/Library/Application Support/Code/User/globalStorage/pleiades.java-extension-pack-jdk/maven/latest/lib/jansi-native"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="java.class.version" value="67.0"/>
+    <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testMethod" classname="testng.AssertTest" time="0.002">
-    <system-out><![CDATA[Setting up the test suite...
-Running before each test...
-Running before the class...
-Running before each test method...
-This is a simple test method.
-Running test 1
-Thread id: 30 name: TestNG-test-SimpleRegression-1
+  <testcase name="testFailedLogin" classname="restassured.LoginTest" time="0.665">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://whitesmokehouse.com/webhook/api/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "testhrvstfo@gmail.com",
+    "password": "@dmin123"
+}
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJpYXQiOjE3NDc1NTYyOTh9.WrOv2NC_Cenb4JBaDa4Yqu41FkugKiID8H4ITPPlF58
+Request method:	POST
+Request URI:	https://whitesmokehouse.com/webhook/api/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "testhrvst@mail.co",
+    "password": "test"
+}
+Response: {
+    "status": "success",
+    "message": "This email= testhrvst@mail.co has not been registered yet."
+}
 ]]></system-out>
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="flackyTest" classname="testng.RetryTest" time="0.0">
-    <skipped message="expected [true] but found [false]"/>
-    <system-out><![CDATA[Retrying test flackyTest for the 2 time.
+  <testcase name="testSuccessfulRegister" classname="restassured.Register" time="0.725">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://whitesmokehouse.com/webhook/api/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJpYXQiOjE3NDc1NTYyOTh9.WrOv2NC_Cenb4JBaDa4Yqu41FkugKiID8H4ITPPlF58
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "user_c4e6b6ea@test.com",
+    "full_name": "User Test",
+    "password": "test@123",
+    "department": "Executive",
+    "phone_number": "08123982401"
+}
+{
+    "id": "23",
+    "email": "user_c4e6b6ea@test.com",
+    "full_name": "User Test",
+    "department": "Executive",
+    "phone_number": "08123982401",
+    "create_at": "2025-05-18T08:18:20.492Z",
+    "update_at": "2025-05-18T08:18:20.492Z"
+}
 ]]></system-out>
   </testcase>
-  <testcase name="flackyTest" classname="testng.RetryTest" time="0.0">
-    <skipped message="expected [true] but found [false]"/>
-    <system-out><![CDATA[Running test 2
-Retrying test flackyTest for the 3 time.
+  <testcase name="testRegisterWithExistingEmail" classname="restassured.Register" time="0.721">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://whitesmokehouse.com/webhook/api/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJpYXQiOjE3NDc1NTYyOTh9.WrOv2NC_Cenb4JBaDa4Yqu41FkugKiID8H4ITPPlF58
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "testhrvstfo@gmail.com",
+    "full_name": "User Test",
+    "password": "test@123",
+    "department": "Executive",
+    "phone_number": "08123982401"
+}
+{
+    "result": "failed",
+    "message": "Email = testhrvstfo@gmail.com already registered"
+}
 ]]></system-out>
   </testcase>
-  <testcase name="flackyTest" classname="testng.RetryTest" time="0.0">
-    <system-out><![CDATA[Running test 3
+  <testcase name="testGetAllObjects" classname="restassured.GetListAllObjectTest" time="0.687">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://whitesmokehouse.com/webhook/api/objects
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJpYXQiOjE3NDc1NTYyOTh9.WrOv2NC_Cenb4JBaDa4Yqu41FkugKiID8H4ITPPlF58
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
 ]]></system-out>
   </testcase>
-  <testcase name="testMethod[1234, active](1)" classname="testng.DataProviderTest" time="0.001">
-    <system-out><![CDATA[Test method executed 1234 with status: active
+  <testcase name="testGetListofObjectsbyIds" classname="restassured.ListOfObjectsByIdsTest" time="0.818">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://whitesmokehouse.com/webhook/api/objects?id=3
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJpYXQiOjE3NDc1NTYyOTh9.WrOv2NC_Cenb4JBaDa4Yqu41FkugKiID8H4ITPPlF58
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+[
+    {
+        "id": 3,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": "1849.99",
+            "cpu_model": "Intel Core i9",
+            "hard_disk_size": "1 TB",
+            "color": "red",
+            "capacity": 2,
+            "screen_size": 14
+        }
+    }
+]
 ]]></system-out>
   </testcase>
-  <testcase name="testMethod[4567, inactive](2)" classname="testng.DataProviderTest" time="0.0">
-    <system-out><![CDATA[Test method executed 4567 with status: inactive
+  <testcase name="testGetSingleObject" classname="restassured.GetSingleObjectTest" time="0.733">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://whitesmokehouse.com/webhook/8749129e-f5f7-4ae6-9b03-93be7252443c/api/objects/3
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJpYXQiOjE3NDc1NTYyOTh9.WrOv2NC_Cenb4JBaDa4Yqu41FkugKiID8H4ITPPlF58
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+{
+    "id": 3,
+    "name": "Apple MacBook Pro 16",
+    "data": {
+        "year": "2019",
+        "price": "1849.99",
+        "cpu_model": "Intel Core i9",
+        "hard_disk_size": "1 TB",
+        "color": "red",
+        "capacity": 2,
+        "screen_size": 14
+    }
+}
 ]]></system-out>
   </testcase>
-  <testcase name="testMethod[8910, active](3)" classname="testng.DataProviderTest" time="0.0">
-    <system-out><![CDATA[Test method executed 8910 with status: active
+  <testcase name="testAddObject" classname="restassured.AddObjectTest" time="0.81">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://whitesmokehouse.com/webhook/api/objects
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJpYXQiOjE3NDc1NTYyOTh9.WrOv2NC_Cenb4JBaDa4Yqu41FkugKiID8H4ITPPlF58
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Apple MacBook Pro 16",
+    "data": {
+        "year": "2019",
+        "price": 1849.99,
+        "cpu_model": "Intel Core i9",
+        "hard_disk_size": "1 TB",
+        "capacity": "2 cpu",
+        "screen_size": "14 Inch",
+        "color": "red"
+    }
+}
+[
+    {
+        "id": 8,
+        "name": "Apple MacBook Pro 16",
+        "data": {
+            "year": "2019",
+            "price": 1849.99,
+            "cpu_model": "Intel Core i9",
+            "hard_disk_size": "1 TB",
+            "color": "red",
+            "capacity": "2 cpu",
+            "screen_size": "14 Inch"
+        }
+    }
+]
 ]]></system-out>
   </testcase>
-  <testcase name="testMethod" classname="testng.SimpleTest" time="1.0"/>
-  <testcase name="testMethod2" classname="testng.SimpleTest" time="0.505">
-    <system-out><![CDATA[Running after each test method...
-Running before each test method...
-This is a simple test method 2.
-Thread id: 41 name: TestNG-test-SimpleRegression-5
+  <testcase name="testUpdateObject" classname="restassured.UpdateObjectTest" time="0.794">
+    <system-out><![CDATA[Request method:	PUT
+Request URI:	https://whitesmokehouse.com/webhook/37777abe-a5ef-4570-a383-c99b5f5f7906/api/objects/8
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJpYXQiOjE3NDc1NTYyOTh9.WrOv2NC_Cenb4JBaDa4Yqu41FkugKiID8H4ITPPlF58
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Apple MacBook Pro 15",
+    "data": {
+        "year": "2020",
+        "price": 1850.99,
+        "cpu_model": "Intel Core i5",
+        "hard_disk_size": "2 TB",
+        "capacity": "3 cpu",
+        "screen_size": "15 Inch",
+        "color": "grey"
+    }
+}
+[
+    {
+        "id": 8,
+        "name": "Apple MacBook Pro 15",
+        "data": {
+            "year": "2020",
+            "price": 1850.99,
+            "CPU model": "Intel Core i5",
+            "Hard disk size": "2 TB",
+            "color": "grey",
+            "capacity": "3 cpu",
+            "screen_size": "15 Inch"
+        }
+    }
+]
 ]]></system-out>
   </testcase>
-  <testcase name="testMethod3" classname="testng.SimpleTest" time="0.506">
-    <system-out><![CDATA[Running after each test method...
-Running before each test method...
-This is a simple test method 3.
-Thread id: 41 name: TestNG-test-SimpleRegression-5
+  <testcase name="testPartiallyUpdateObject" classname="restassured.PartiallyUpdateObjectTest" time="0.754">
+    <system-out><![CDATA[Request method:	PATCH
+Request URI:	https://whitesmokehouse.com/webhook/39a0f904-b0f2-4428-80a3-391cea5d7d04/api/object/8
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJpYXQiOjE3NDc1NTYyOTh9.WrOv2NC_Cenb4JBaDa4Yqu41FkugKiID8H4ITPPlF58
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Apple MacBook Air M1",
+    "year": "2030"
+}
+{
+    "id": 8,
+    "name": "Apple MacBook Air M1",
+    "data": {
+        "year": "2030",
+        "price": "1850.99",
+        "cpu_model": "Intel Core i5",
+        "hard_disk_size": "2 TB",
+        "color": "grey",
+        "capacity": "3 cpu",
+        "screen_size": "15 Inch"
+    }
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteObject" classname="restassured.DeleteObjectTest" time="0.72">
+    <system-out><![CDATA[Request method:	DELETE
+Request URI:	https://whitesmokehouse.com/webhook/d79a30ed-1066-48b6-83f5-556120afc46f/api/objects/8
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJpYXQiOjE3NDc1NTYyOTh9.WrOv2NC_Cenb4JBaDa4Yqu41FkugKiID8H4ITPPlF58
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+{
+    "status": "deleted",
+    "message": "Object with id = 8, has been deleted."
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteObject" classname="restassured.DeleteObjectTest" time="0.712">
+    <system-out><![CDATA[Request method:	DELETE
+Request URI:	https://whitesmokehouse.com/webhook/d79a30ed-1066-48b6-83f5-556120afc46f/api/objects/8
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJpYXQiOjE3NDc1NTYyOTh9.WrOv2NC_Cenb4JBaDa4Yqu41FkugKiID8H4ITPPlF58
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+{
+    "status": "failed",
+    "message": "object with id = 8 has been deleted or doesn't exist"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testGetAllDepartment" classname="restassured.GetAllDepartmentTest" time="0.722">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://whitesmokehouse.com/webhook/api/department
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJpYXQiOjE3NDc1NTYyOTh9.WrOv2NC_Cenb4JBaDa4Yqu41FkugKiID8H4ITPPlF58
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+[
+    {
+        "id": 1,
+        "department": "Technology"
+    },
+    {
+        "id": 2,
+        "department": "Human Resource"
+    },
+    {
+        "id": 3,
+        "department": "Finance"
+    },
+    {
+        "id": 4,
+        "department": "Executive"
+    }
+]
 ]]></system-out>
   </testcase>
 </testsuite>

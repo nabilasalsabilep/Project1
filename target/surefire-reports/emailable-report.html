@@ -8,34 +8,22 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">SimpleSuite</th></tr>
-<tr><td><a href="#t0">SimpleRegression</a></td><td class="num">8</td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">2.055</td><td></td><td></td></tr>
+<tr><th colspan="8">Task2Suite</th></tr>
+<tr><td><a href="#t0">Task2Tests</a></td><td class="num">12</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">8,891</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SimpleSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">SimpleRegression &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="2">testng.RetryTest</td><td><a href="#m0">flackyTest</a></td><td rowspan="2">1747037480145</td><td rowspan="2">0</td></tr><tr class="retriedeven"><td><a href="#m1">flackyTest</a></td></tr><tr><th colspan="4">SimpleRegression &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testng.AssertTest</td><td><a href="#m2">testMethod</a></td><td rowspan="1">1747037480138</td><td rowspan="1">4</td></tr><tr class="passedodd"><td rowspan="3">testng.DataProviderTest</td><td><a href="#m3">testMethod</a></td><td rowspan="3">1747037480141</td><td rowspan="3">5</td></tr><tr class="passedodd"><td><a href="#m4">testMethod</a></td></tr><tr class="passedodd"><td><a href="#m5">testMethod</a></td></tr><tr class="passedeven"><td rowspan="1">testng.RetryTest</td><td><a href="#m6">flackyTest</a></td><td rowspan="1">1747037480146</td><td rowspan="1">0</td></tr><tr class="passedodd"><td rowspan="3">testng.SimpleTest</td><td><a href="#m7">testMethod</a></td><td rowspan="1">1747037480140</td><td rowspan="1">1006</td></tr><tr class="passedodd"><td><a href="#m8">testMethod2</a></td><td rowspan="1">1747037481158</td><td rowspan="1">506</td></tr><tr class="passedodd"><td><a href="#m9">testMethod3</a></td><td rowspan="1">1747037481669</td><td rowspan="1">507</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Task2Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Task2Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">restassured.AddObjectTest</td><td><a href="#m0">testAddObject</a></td><td rowspan="1">1747556303539</td><td rowspan="1">810</td></tr><tr class="passedodd"><td rowspan="2">restassured.DeleteObjectTest</td><td><a href="#m1">testDeleteObject</a></td><td rowspan="2">1747556306621</td><td rowspan="2">712</td></tr><tr class="passedodd"><td><a href="#m2">testDeleteObject</a></td></tr><tr class="passedeven"><td rowspan="1">restassured.GetAllDepartmentTest</td><td><a href="#m3">testGetAllDepartment</a></td><td rowspan="1">1747556307334</td><td rowspan="1">722</td></tr><tr class="passedodd"><td rowspan="1">restassured.GetListAllObjectTest</td><td><a href="#m4">testGetAllObjects</a></td><td rowspan="1">1747556301296</td><td rowspan="1">687</td></tr><tr class="passedeven"><td rowspan="1">restassured.GetSingleObjectTest</td><td><a href="#m5">testGetSingleObject</a></td><td rowspan="1">1747556302805</td><td rowspan="1">733</td></tr><tr class="passedodd"><td rowspan="1">restassured.ListOfObjectsByIdsTest</td><td><a href="#m6">testGetListofObjectsbyIds</a></td><td rowspan="1">1747556301985</td><td rowspan="1">817</td></tr><tr class="passedeven"><td rowspan="1">restassured.LoginTest</td><td><a href="#m7">testFailedLogin</a></td><td rowspan="1">1747556299181</td><td rowspan="1">665</td></tr><tr class="passedodd"><td rowspan="1">restassured.PartiallyUpdateObjectTest</td><td><a href="#m8">testPartiallyUpdateObject</a></td><td rowspan="1">1747556305145</td><td rowspan="1">754</td></tr><tr class="passedeven"><td rowspan="2">restassured.Register</td><td><a href="#m9">testRegisterWithExistingEmail</a></td><td rowspan="1">1747556300574</td><td rowspan="1">721</td></tr><tr class="passedeven"><td><a href="#m10">testSuccessfulRegister</a></td><td rowspan="1">1747556299849</td><td rowspan="1">724</td></tr><tr class="passedodd"><td rowspan="1">restassured.UpdateObjectTest</td><td><a href="#m11">testUpdateObject</a></td><td rowspan="1">1747556304349</td><td rowspan="1">795</td></tr></tbody>
 </table>
-<h2>SimpleRegression</h2><h3 id="m0">testng.RetryTest#flackyTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at testng.RetryTest.flackyTest(RetryTest.java:14)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testng.RetryTest#flackyTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at testng.RetryTest.flackyTest(RetryTest.java:14)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1575)
-... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testng.AssertTest#testMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testng.DataProviderTest#testMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>1234</td><td>active</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testng.DataProviderTest#testMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>8910</td><td>active</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">testng.DataProviderTest#testMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>4567</td><td>inactive</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">testng.RetryTest#flackyTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">testng.SimpleTest#testMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">testng.SimpleTest#testMethod2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">testng.SimpleTest#testMethod3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Task2Tests</h2><h3 id="m0">restassured.AddObjectTest#testAddObject</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">restassured.DeleteObjectTest#testDeleteObject</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">restassured.DeleteObjectTest#testDeleteObject</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">restassured.GetAllDepartmentTest#testGetAllDepartment</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">restassured.GetListAllObjectTest#testGetAllObjects</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">restassured.GetSingleObjectTest#testGetSingleObject</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">restassured.ListOfObjectsByIdsTest#testGetListofObjectsbyIds</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">restassured.LoginTest#testFailedLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">restassured.PartiallyUpdateObjectTest#testPartiallyUpdateObject</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">restassured.Register#testRegisterWithExistingEmail</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">restassured.Register#testSuccessfulRegister</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">restassured.UpdateObjectTest#testUpdateObject</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
