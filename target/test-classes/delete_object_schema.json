@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Delete Object By ID",
+    "description": "Delete object by its ID",
+    "type": "object",
+    "properties": {
+      "status": {
+        "type": "string"
+      },
+      "message": {
+        "type": "string"
+      }
+    },
+        "required": [
+          "status",
+          "message"
+        ]
+  }  

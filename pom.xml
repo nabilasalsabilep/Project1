@@ -26,6 +26,23 @@
           <version>5.5.1</version>
           <scope>test</scope>
         </dependency>
+        <dependency>
+          <groupId>org.projectlombok</groupId>
+          <artifactId>lombok</artifactId>
+          <version>1.18.38</version>
+          <scope>provided</scope>
+      </dependency>
+      <dependency>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-databind</artifactId>
+          <version>2.19.0</version>
+      </dependency>
+      <dependency>
+          <groupId>io.rest-assured</groupId>
+          <artifactId>json-schema-validator</artifactId>
+          <version>5.5.2</version>
+          <scope>test</scope>
+      </dependency>
     </dependencies>
 
     <build>
@@ -39,7 +56,8 @@
                 <forkCount>0</forkCount>
                 <suiteXmlFiles>
                     <!-- <suiteXmlFiles>src/test/resources/testng_simple_suite.xml</suiteXmlFiles> -->
-                    <suiteXmlFiles>src/test/resources/task2_suite.xml</suiteXmlFiles>
+                    <!-- <suiteXmlFiles>src/test/resources/task2_suite.xml</suiteXmlFiles> -->
+                    <suiteXmlFile>src/test/resources/${suiteXml}</suiteXmlFile>
                 </suiteXmlFiles>
               </configuration>
             </plugin>

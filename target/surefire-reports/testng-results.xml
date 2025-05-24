@@ -1,83 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-18T15:18:19 WIB" name="Task2Suite" finished-at="2025-05-18T15:18:28 WIB" duration-ms="8891">
+  <suite started-at="2025-05-24T16:57:45 WIB" name="PojoE2ESuite" finished-at="2025-05-24T16:57:56 WIB" duration-ms="11316">
     <groups>
+      <group name="newObject">
+        <method signature="AddObject.addObject()[pri:0, instance:e2e.pojo.AddObject@ab24484]" name="addObject" class="e2e.pojo.AddObject"/>
+        <method signature="AddObject.getObjectbyID()[pri:0, instance:e2e.pojo.AddObject@ab24484]" name="getObjectbyID" class="e2e.pojo.AddObject"/>
+      </group> <!-- newObject -->
+      <group name="deleteObject">
+        <method signature="DeleteObject.deleteObject()[pri:10, instance:e2e.pojo.DeleteObject@106b014e]" name="deleteObject" class="e2e.pojo.DeleteObject"/>
+        <method signature="DeleteObject.validateGetDeletedObject()[pri:0, instance:e2e.pojo.DeleteObject@106b014e]" name="validateGetDeletedObject" class="e2e.pojo.DeleteObject"/>
+      </group> <!-- deleteObject -->
+      <group name="updateObject">
+        <method signature="UpdateObject.updateObject()[pri:1, instance:e2e.pojo.UpdateObject@54e43bfe]" name="updateObject" class="e2e.pojo.UpdateObject"/>
+        <method signature="UpdateObject.partiallyUpdateObject()[pri:2, instance:e2e.pojo.UpdateObject@54e43bfe]" name="partiallyUpdateObject" class="e2e.pojo.UpdateObject"/>
+      </group> <!-- updateObject -->
     </groups>
-    <test started-at="2025-05-18T15:18:19 WIB" name="Task2Tests" finished-at="2025-05-18T15:18:28 WIB" duration-ms="8891">
-      <class name="restassured.ListOfObjectsByIdsTest">
-        <test-method signature="testGetListofObjectsbyIds()[pri:5, instance:restassured.ListOfObjectsByIdsTest@568c9ee1]" started-at="2025-05-18T15:18:21 WIB" name="testGetListofObjectsbyIds" finished-at="2025-05-18T15:18:22 WIB" duration-ms="817" status="PASS">
+    <test started-at="2025-05-24T16:57:45 WIB" name="PojoE2ETests" finished-at="2025-05-24T16:57:56 WIB" duration-ms="11316">
+      <class name="e2e.pojo.DeleteObject">
+        <test-method signature="deleteObject()[pri:10, instance:e2e.pojo.DeleteObject@106b014e]" started-at="2025-05-24T16:57:54 WIB" name="deleteObject" depends-on-groups="updateObject" finished-at="2025-05-24T16:57:55 WIB" duration-ms="804" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGetListofObjectsbyIds -->
-      </class> <!-- restassured.ListOfObjectsByIdsTest -->
-      <class name="restassured.GetListAllObjectTest">
-        <test-method signature="testGetAllObjects()[pri:4, instance:restassured.GetListAllObjectTest@6ba08a09]" started-at="2025-05-18T15:18:21 WIB" name="testGetAllObjects" finished-at="2025-05-18T15:18:21 WIB" duration-ms="687" status="PASS">
+        </test-method> <!-- deleteObject -->
+        <test-method signature="deleteObject()[pri:10, instance:e2e.pojo.DeleteObject@106b014e]" started-at="2025-05-24T16:57:55 WIB" name="deleteObject" depends-on-groups="updateObject" finished-at="2025-05-24T16:57:55 WIB" duration-ms="797" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGetAllObjects -->
-      </class> <!-- restassured.GetListAllObjectTest -->
-      <class name="restassured.Register">
-        <test-method signature="testSuccessfulRegister()[pri:2, instance:restassured.Register@546c30c2]" started-at="2025-05-18T15:18:19 WIB" name="testSuccessfulRegister" finished-at="2025-05-18T15:18:20 WIB" duration-ms="724" status="PASS">
+        </test-method> <!-- deleteObject -->
+        <test-method signature="validateGetDeletedObject()[pri:0, instance:e2e.pojo.DeleteObject@106b014e]" started-at="2025-05-24T16:57:55 WIB" name="validateGetDeletedObject" finished-at="2025-05-24T16:57:56 WIB" depends-on-methods="e2e.pojo.DeleteObject.deleteObject" duration-ms="846" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSuccessfulRegister -->
-        <test-method signature="testRegisterWithExistingEmail()[pri:3, instance:restassured.Register@546c30c2]" started-at="2025-05-18T15:18:20 WIB" name="testRegisterWithExistingEmail" finished-at="2025-05-18T15:18:21 WIB" duration-ms="721" status="PASS">
+        </test-method> <!-- validateGetDeletedObject -->
+      </class> <!-- e2e.pojo.DeleteObject -->
+      <class name="e2e.pojo.UpdateObject">
+        <test-method signature="updateObject()[pri:1, instance:e2e.pojo.UpdateObject@54e43bfe]" started-at="2025-05-24T16:57:51 WIB" name="updateObject" depends-on-groups="newObject" finished-at="2025-05-24T16:57:52 WIB" duration-ms="921" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testRegisterWithExistingEmail -->
-      </class> <!-- restassured.Register -->
-      <class name="restassured.PartiallyUpdateObjectTest">
-        <test-method signature="testPartiallyUpdateObject()[pri:9, instance:restassured.PartiallyUpdateObjectTest@538a90a5]" started-at="2025-05-18T15:18:25 WIB" name="testPartiallyUpdateObject" finished-at="2025-05-18T15:18:25 WIB" duration-ms="754" status="PASS">
+        </test-method> <!-- updateObject -->
+        <test-method signature="partiallyUpdateObject()[pri:2, instance:e2e.pojo.UpdateObject@54e43bfe]" started-at="2025-05-24T16:57:52 WIB" name="partiallyUpdateObject" depends-on-groups="newObject" finished-at="2025-05-24T16:57:53 WIB" duration-ms="919" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPartiallyUpdateObject -->
-      </class> <!-- restassured.PartiallyUpdateObjectTest -->
-      <class name="restassured.GetSingleObjectTest">
-        <test-method signature="testGetSingleObject()[pri:6, instance:restassured.GetSingleObjectTest@3b839f68]" started-at="2025-05-18T15:18:22 WIB" name="testGetSingleObject" finished-at="2025-05-18T15:18:23 WIB" duration-ms="733" status="PASS">
+        </test-method> <!-- partiallyUpdateObject -->
+        <test-method signature="validateGetUpdatedObject()[pri:0, instance:e2e.pojo.UpdateObject@54e43bfe]" started-at="2025-05-24T16:57:53 WIB" name="validateGetUpdatedObject" depends-on-groups="updateObject" finished-at="2025-05-24T16:57:54 WIB" duration-ms="804" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGetSingleObject -->
-      </class> <!-- restassured.GetSingleObjectTest -->
-      <class name="restassured.GetAllDepartmentTest">
-        <test-method signature="testGetAllDepartment()[pri:0, instance:restassured.GetAllDepartmentTest@18f27a81]" started-at="2025-05-18T15:18:27 WIB" name="testGetAllDepartment" finished-at="2025-05-18T15:18:28 WIB" duration-ms="722" status="PASS">
+        </test-method> <!-- validateGetUpdatedObject -->
+      </class> <!-- e2e.pojo.UpdateObject -->
+      <class name="e2e.pojo.GetListObject">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:e2e.pojo.GetListObject@712ac7e6]" started-at="2025-05-24T16:57:45 WIB" name="beforeSuite" finished-at="2025-05-24T16:57:45 WIB" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGetAllDepartment -->
-      </class> <!-- restassured.GetAllDepartmentTest -->
-      <class name="restassured.AddObjectTest">
-        <test-method signature="testAddObject()[pri:7, instance:restassured.AddObjectTest@e5c52fa]" started-at="2025-05-18T15:18:23 WIB" name="testAddObject" finished-at="2025-05-18T15:18:24 WIB" duration-ms="810" status="PASS">
+        </test-method> <!-- beforeSuite -->
+        <test-method signature="registerUser()[pri:0, instance:e2e.pojo.GetListObject@712ac7e6]" started-at="2025-05-24T16:57:45 WIB" name="registerUser" finished-at="2025-05-24T16:57:47 WIB" duration-ms="1735" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAddObject -->
-      </class> <!-- restassured.AddObjectTest -->
-      <class name="restassured.LoginTest">
-        <test-method is-config="true" signature="testSuccessfulLogin()[pri:0, instance:restassured.LoginTest@1382a7d8]" started-at="2025-05-18T15:18:17 WIB" name="testSuccessfulLogin" finished-at="2025-05-18T15:18:19 WIB" duration-ms="1631" status="PASS">
+        </test-method> <!-- registerUser -->
+        <test-method signature="loginUser()[pri:0, instance:e2e.pojo.GetListObject@712ac7e6]" started-at="2025-05-24T16:57:47 WIB" name="loginUser" finished-at="2025-05-24T16:57:48 WIB" depends-on-methods="e2e.pojo.GetListObject.registerUser" duration-ms="1242" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSuccessfulLogin -->
-        <test-method signature="testFailedLogin()[pri:0, instance:restassured.LoginTest@1382a7d8]" started-at="2025-05-18T15:18:19 WIB" name="testFailedLogin" finished-at="2025-05-18T15:18:19 WIB" duration-ms="665" status="PASS">
+        </test-method> <!-- loginUser -->
+        <test-method signature="getListAllObject()[pri:0, instance:e2e.pojo.GetListObject@712ac7e6]" started-at="2025-05-24T16:57:49 WIB" name="getListAllObject" finished-at="2025-05-24T16:57:50 WIB" depends-on-methods="e2e.pojo.GetListObject.loginUser" duration-ms="1556" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testFailedLogin -->
-      </class> <!-- restassured.LoginTest -->
-      <class name="restassured.UpdateObjectTest">
-        <test-method signature="testUpdateObject()[pri:8, instance:restassured.UpdateObjectTest@614361fa]" started-at="2025-05-18T15:18:24 WIB" name="testUpdateObject" finished-at="2025-05-18T15:18:25 WIB" duration-ms="795" status="PASS">
+        </test-method> <!-- getListAllObject -->
+      </class> <!-- e2e.pojo.GetListObject -->
+      <class name="e2e.pojo.AddObject">
+        <test-method signature="addObject()[pri:0, instance:e2e.pojo.AddObject@ab24484]" started-at="2025-05-24T16:57:48 WIB" name="addObject" finished-at="2025-05-24T16:57:49 WIB" depends-on-methods="loginUser" duration-ms="873" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testUpdateObject -->
-      </class> <!-- restassured.UpdateObjectTest -->
-      <class name="restassured.DeleteObjectTest">
-        <test-method signature="testDeleteObject()[pri:10, instance:restassured.DeleteObjectTest@74d53d63]" started-at="2025-05-18T15:18:25 WIB" name="testDeleteObject" finished-at="2025-05-18T15:18:26 WIB" duration-ms="720" status="PASS">
+        </test-method> <!-- addObject -->
+        <test-method signature="getObjectbyID()[pri:0, instance:e2e.pojo.AddObject@ab24484]" started-at="2025-05-24T16:57:50 WIB" name="getObjectbyID" finished-at="2025-05-24T16:57:51 WIB" depends-on-methods="e2e.pojo.AddObject.addObject" duration-ms="794" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDeleteObject -->
-        <test-method signature="testDeleteObject()[pri:10, instance:restassured.DeleteObjectTest@74d53d63]" started-at="2025-05-18T15:18:26 WIB" name="testDeleteObject" finished-at="2025-05-18T15:18:27 WIB" duration-ms="712" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDeleteObject -->
-      </class> <!-- restassured.DeleteObjectTest -->
-    </test> <!-- Task2Tests -->
-  </suite> <!-- Task2Suite -->
+        </test-method> <!-- getObjectbyID -->
+      </class> <!-- e2e.pojo.AddObject -->
+    </test> <!-- PojoE2ETests -->
+  </suite> <!-- PojoE2ESuite -->
 </testng-results>

@@ -1,5 +1,14 @@
 /Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/data/Product.java
 /Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/data_provider/DataProviderSample.java
+/Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/e2e/AddObject.java
+/Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/e2e/DeleteObject.java
+/Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/e2e/GetListObject.java
+/Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/e2e/GlobalVar.java
+/Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/e2e/UpdateObject.java
+/Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/e2e/pojo/AddObject.java
+/Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/e2e/pojo/DeleteObject.java
+/Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/e2e/pojo/GetListObject.java
+/Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/e2e/pojo/UpdateObject.java
 /Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/restassured/AddObjectTest.java
 /Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/restassured/DeleteObjectTest.java
 /Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/restassured/GetAllDepartmentTest.java

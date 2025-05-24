@@ -1,0 +1,57 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Update Object",
+    "description": "User can update object",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "id": {
+                "type": "integer"
+            },
+            "name": {
+                "type": "string"
+            },
+            "data": {
+                "type": "object",
+                "properties": {
+                    "year": {
+                        "type": "string"
+                    },
+                    "price": {
+                        "type": "number"
+                    },
+                    "CPU model": {
+                        "type": "string"
+                    },
+                    "Hard disk size": {
+                        "type": "string"
+                    },
+                    "capacity": {
+                        "type": "string"
+                    },
+                    "screen_size": {
+                        "type": "string"
+                    },
+                    "color": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "year",
+                    "price",
+                    "CPU model",
+                    "Hard disk size",
+                    "capacity",
+                    "screen_size",
+                    "color"
+                ]
+            }
+        },
+        "required": [
+            "id",
+            "name",
+            "data"
+        ]
+    }
+}
