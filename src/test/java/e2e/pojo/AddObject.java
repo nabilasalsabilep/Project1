@@ -63,11 +63,11 @@ public class AddObject {
 
         response.then().assertThat().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("add_object_schema.json"));
 
-        List<AddObjectResponse> addEmployeeResponse = objectMapper.readValue(response.body().asString(),
+        List<AddObjectResponse> addObjectResponses = objectMapper.readValue(response.body().asString(),
                 new TypeReference<List<AddObjectResponse>>() {
                 });
 
-        AddObjectResponse object = addEmployeeResponse.get(0);
+        AddObjectResponse object = addObjectResponses.get(0);
         Assert.assertNotNull(object.getObjectID(), "Expected ID not to be null");
         Assert.assertEquals(object.getObjectName(), GlobalVar.requestAddObject.getObjectName(), "Expected name " + GlobalVar.requestAddObject.getObjectName() + " but got " + object.getObjectName());
         Assert.assertEquals(object.getData().getYear(), GlobalVar.addDataDetails.getYear(), "Expected year " + GlobalVar.addDataDetails.getYear() + " but got " + object.getData().getYear());

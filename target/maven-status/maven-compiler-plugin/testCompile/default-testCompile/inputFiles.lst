@@ -1,3 +1,11 @@
+/Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/cucumber/definitions/AddObjectDefinition.java
+/Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/cucumber/definitions/DeleteObjectDefinition.java
+/Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/cucumber/definitions/LoginDefinition.java
+/Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/cucumber/definitions/PartiallyUpdateObjectDefinition.java
+/Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/cucumber/definitions/RegisterDefinition.java
+/Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/cucumber/definitions/UpdateObjectDefinition.java
+/Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/cucumber/helper/GenerateReport.java
+/Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/cucumber/runners/CucumberRunner.java
 /Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/data/Product.java
 /Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/data_provider/DataProviderSample.java
 /Users/salsa/Documents/AfterOffice/Project/testngprogram/src/test/java/e2e/AddObject.java
