@@ -5,6 +5,7 @@
 /Users/salsa/Documents/AfterOffice/Project/testngprogram/src/main/java/com/demo/testng/program/model/RequestModel/RequestUpdateObject.java
 /Users/salsa/Documents/AfterOffice/Project/testngprogram/src/main/java/com/demo/testng/program/model/ResponseModel/AddObjectResponse.java
 /Users/salsa/Documents/AfterOffice/Project/testngprogram/src/main/java/com/demo/testng/program/model/ResponseModel/DeleteObjectResponse.java
+/Users/salsa/Documents/AfterOffice/Project/testngprogram/src/main/java/com/demo/testng/program/model/ResponseModel/GetListObjectResponse.java
 /Users/salsa/Documents/AfterOffice/Project/testngprogram/src/main/java/com/demo/testng/program/model/ResponseModel/GetObjectbyIDResponse.java
 /Users/salsa/Documents/AfterOffice/Project/testngprogram/src/main/java/com/demo/testng/program/model/ResponseModel/PartiallyUpdateObjectResponse.java
 /Users/salsa/Documents/AfterOffice/Project/testngprogram/src/main/java/com/demo/testng/program/model/ResponseModel/RegisterResponse.java

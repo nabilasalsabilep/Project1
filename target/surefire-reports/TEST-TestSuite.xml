@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="15.879" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="17.009" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -65,7 +65,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="runScenario[&quot;&quot;, &quot;Add Object API&quot;](1)" classname="cucumber.runners.CucumberRunner" time="2.827">
+  <testcase name="runScenario[&quot;&quot;, &quot;Add Object API&quot;](1)" classname="cucumber.runners.CucumberRunner" time="2.565">
     <system-out><![CDATA[
 Scenario:                                                                      # src/test/resources/features/add_object.feature:14
   Given The base url in this feature is "https://whitesmokehouse.com"          # cucumber.definitions.RegisterDefinition.set_base_url(java.lang.String)
@@ -76,9 +76,9 @@ Scenario:                                                                      #
       "password": "Password1!"
     }
     """
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODE1NTMzMX0.6V9kgJpAiIgla8yLda2WoH1Sx0pAurSYcuAFPqKtO4Y
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODMxOTg1OX0.2w7FmBM6jUFYbfiC7LvbFZWD3_zP4BbpJ9XI1TVxmTQ
   And Save the token from the response to local storage                        # cucumber.definitions.LoginDefinition.save_the_token()
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODE1NTMzMX0.6V9kgJpAiIgla8yLda2WoH1Sx0pAurSYcuAFPqKtO4Y
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODMxOTg1OX0.2w7FmBM6jUFYbfiC7LvbFZWD3_zP4BbpJ9XI1TVxmTQ
   Given Make sure token in local storage not empty                             # cucumber.definitions.AddObjectDefinition.assert_token_in_variable()
   When Send a http "POST" request to "/webhook/api/objects" with body:         # cucumber.definitions.RegisterDefinition.send_request_http(java.lang.String,java.lang.String,java.lang.String)
     """
@@ -111,59 +111,64 @@ SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;&quot;, &quot;Detele Object API&quot;](2)" classname="cucumber.runners.CucumberRunner" time="1.627">
+  <testcase name="runScenario[&quot;&quot;, &quot;Detele Object API&quot;](2)" classname="cucumber.runners.CucumberRunner" time="2.44">
     <system-out><![CDATA[
-Scenario:                                                                                                         # src/test/resources/features/delete_object.feature:14
-  Given The base url in this feature is "https://whitesmokehouse.com"                                             # cucumber.definitions.RegisterDefinition.set_base_url(java.lang.String)
-  When Send a http "POST" request to "/webhook/api/login" with body:                                              # cucumber.definitions.RegisterDefinition.send_request_http(java.lang.String,java.lang.String,java.lang.String)
+Scenario:                                                                                                          # src/test/resources/features/delete_object.feature:14
+  Given The base url in this feature is "https://whitesmokehouse.com"                                              # cucumber.definitions.RegisterDefinition.set_base_url(java.lang.String)
+  When Send a http "POST" request to "/webhook/api/login" with body:                                               # cucumber.definitions.RegisterDefinition.send_request_http(java.lang.String,java.lang.String,java.lang.String)
     """
     {
       "email": "user_15@test.com",
       "password": "Password1!"
     }
     """
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODE1NTMzM30.ffCta5Qj3JWaLjHlxWkcI3rS3Yt4PgPmaPJ9AsDg41Y
-  And Save the token from the response to local storage                                                           # cucumber.definitions.LoginDefinition.save_the_token()
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODE1NTMzM30.ffCta5Qj3JWaLjHlxWkcI3rS3Yt4PgPmaPJ9AsDg41Y
-  Given Make sure token in local storage not empty                                                                # cucumber.definitions.AddObjectDefinition.assert_token_in_variable()
-  When Send a http "DELETE" request to "/webhook/d79a30ed-1066-48b6-83f5-556120afc46f/api/objects/575" with body: # cucumber.definitions.RegisterDefinition.send_request_http(java.lang.String,java.lang.String,java.lang.String)
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODMxOTg2MX0.E_IRRJ6n_PCmGVm0sTTBEPJOPRxn954xrA7eNJGJGnA
+  And Save the token from the response to local storage                                                            # cucumber.definitions.LoginDefinition.save_the_token()
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODMxOTg2MX0.E_IRRJ6n_PCmGVm0sTTBEPJOPRxn954xrA7eNJGJGnA
+  Given Make sure token in local storage not empty                                                                 # cucumber.definitions.AddObjectDefinition.assert_token_in_variable()
+  When Send a http "GET" request to "/webhook/api/objects" with body:                                              # cucumber.definitions.RegisterDefinition.send_request_http(java.lang.String,java.lang.String,java.lang.String)
     """
     {}
     """
-  Then The response status must be 200                                                                            # cucumber.definitions.RegisterDefinition.send_request_http(int)
+  And Get first id from the list of objects                                                                        # cucumber.definitions.GetListObjectDefinition.get_first_id()
+  When Send a http "DELETE" request to "/webhook/d79a30ed-1066-48b6-83f5-556120afc46f/api/objects/{id}" with body: # cucumber.definitions.RegisterDefinition.send_request_http(java.lang.String,java.lang.String,java.lang.String)
+    """
+    {}
+    """
+  Then The response status must be 200                                                                             # cucumber.definitions.RegisterDefinition.send_request_http(int)
 deleted
-  And The status in the response must be "deleted"                                                                # cucumber.definitions.DeleteObjectDefinition.assert_status_deleted(java.lang.String)
-Object with id = 575, has been deleted.
-  And The message in the response must be "Object with id = 575, has been deleted."                               # cucumber.definitions.DeleteObjectDefinition.assert_message_deleted(java.lang.String)
+  And The status in the response must be "deleted"                                                                 # cucumber.definitions.DeleteObjectDefinition.assert_status_deleted(java.lang.String)
+Object with id = 19, has been deleted.
+  And The message in the response must be "Object with id = {id}, has been deleted."                               # cucumber.definitions.DeleteObjectDefinition.assert_message_deleted(java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;&quot;, &quot;Detele Object API&quot;](3)" classname="cucumber.runners.CucumberRunner" time="1.428">
+  <testcase name="runScenario[&quot;&quot;, &quot;Detele Object API&quot;](3)" classname="cucumber.runners.CucumberRunner" time="1.591">
     <system-out><![CDATA[
-Scenario:                                                                                                         # src/test/resources/features/delete_object.feature:24
-  Given The base url in this feature is "https://whitesmokehouse.com"                                             # cucumber.definitions.RegisterDefinition.set_base_url(java.lang.String)
-  When Send a http "POST" request to "/webhook/api/login" with body:                                              # cucumber.definitions.RegisterDefinition.send_request_http(java.lang.String,java.lang.String,java.lang.String)
+Scenario:                                                                                                          # src/test/resources/features/delete_object.feature:29
+  Given The base url in this feature is "https://whitesmokehouse.com"                                              # cucumber.definitions.RegisterDefinition.set_base_url(java.lang.String)
+  When Send a http "POST" request to "/webhook/api/login" with body:                                               # cucumber.definitions.RegisterDefinition.send_request_http(java.lang.String,java.lang.String,java.lang.String)
     """
     {
       "email": "user_15@test.com",
       "password": "Password1!"
     }
     """
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODE1NTMzNH0.xTIGkkmJjui3Z-uYdOqez-_wOxySXaXWacpgZrLsO-M
-  And Save the token from the response to local storage                                                           # cucumber.definitions.LoginDefinition.save_the_token()
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODE1NTMzNH0.xTIGkkmJjui3Z-uYdOqez-_wOxySXaXWacpgZrLsO-M
-  Given Make sure token in local storage not empty                                                                # cucumber.definitions.AddObjectDefinition.assert_token_in_variable()
-  When Send a http "DELETE" request to "/webhook/d79a30ed-1066-48b6-83f5-556120afc46f/api/objects/575" with body: # cucumber.definitions.RegisterDefinition.send_request_http(java.lang.String,java.lang.String,java.lang.String)
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODMxOTg2NH0.Et5U3HkGk_Ub66orRJad8eOSo7Loym7ObtdMbt0SEVw
+  And Save the token from the response to local storage                                                            # cucumber.definitions.LoginDefinition.save_the_token()
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODMxOTg2NH0.Et5U3HkGk_Ub66orRJad8eOSo7Loym7ObtdMbt0SEVw
+  Given Make sure token in local storage not empty                                                                 # cucumber.definitions.AddObjectDefinition.assert_token_in_variable()
+  When Send a http "DELETE" request to "/webhook/d79a30ed-1066-48b6-83f5-556120afc46f/api/objects/{id}" with body: # cucumber.definitions.RegisterDefinition.send_request_http(java.lang.String,java.lang.String,java.lang.String)
     """
     {}
     """
-  Then The response status must be 200                                                                            # cucumber.definitions.RegisterDefinition.send_request_http(int)
+  Then The response status must be 200                                                                             # cucumber.definitions.RegisterDefinition.send_request_http(int)
 failed
-  And The status in the response must be "failed"                                                                 # cucumber.definitions.DeleteObjectDefinition.assert_status_deleted(java.lang.String)
-object with id = 575 has been deleted or doesn't exist
-  And The message in the response must be "object with id = 575 has been deleted or doesn't exist"                # cucumber.definitions.DeleteObjectDefinition.assert_message_deleted(java.lang.String)
+  And The status in the response must be "failed"                                                                  # cucumber.definitions.DeleteObjectDefinition.assert_status_deleted(java.lang.String)
+object with id = 19 has been deleted or doesn't exist
+  And The message in the response must be "object with id = {id} has been deleted or doesn't exist"                # cucumber.definitions.DeleteObjectDefinition.assert_message_deleted(java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;&quot;, &quot;Login API&quot;](4)" classname="cucumber.runners.CucumberRunner" time="0.727">
+  <testcase name="runScenario[&quot;&quot;, &quot;Login API&quot;](4)" classname="cucumber.runners.CucumberRunner" time="0.879">
     <system-out><![CDATA[
 Scenario:                                                             # src/test/resources/features/login.feature:6
   Given The base url in this feature is "https://whitesmokehouse.com" # cucumber.definitions.RegisterDefinition.set_base_url(java.lang.String)
@@ -175,11 +180,11 @@ Scenario:                                                             # src/test
     }
     """
   Then The response status must be 200                                # cucumber.definitions.RegisterDefinition.send_request_http(int)
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODE1NTMzNn0.rueSX6Ki8Y7a0jS41GgvKzbt1juN95owsNdypWURi6Y
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODMxOTg2NX0.9YPdmj5OFf3lYsIHodkId5i2uXrkznAjzdT0JpWHHXE
   And Save the token from the response to local storage               # cucumber.definitions.LoginDefinition.save_the_token()
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;&quot;, &quot;Partially Update Object API&quot;](5)" classname="cucumber.runners.CucumberRunner" time="1.446">
+  <testcase name="runScenario[&quot;&quot;, &quot;Partially Update Object API&quot;](5)" classname="cucumber.runners.CucumberRunner" time="1.54">
     <system-out><![CDATA[
 Scenario:                                                                                                       # src/test/resources/features/partially_update_object.feature:14
   Given The base url in this feature is "https://whitesmokehouse.com"                                           # cucumber.definitions.RegisterDefinition.set_base_url(java.lang.String)
@@ -190,9 +195,9 @@ Scenario:                                                                       
       "password": "Password1!"
     }
     """
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODE1NTMzNn0.rueSX6Ki8Y7a0jS41GgvKzbt1juN95owsNdypWURi6Y
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODMxOTg2Nn0.YOvEOniWrTDMkFSPAvT2qwWlyWXFA9eAnnn2HF8cYN4
   And Save the token from the response to local storage                                                         # cucumber.definitions.LoginDefinition.save_the_token()
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODE1NTMzNn0.rueSX6Ki8Y7a0jS41GgvKzbt1juN95owsNdypWURi6Y
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODMxOTg2Nn0.YOvEOniWrTDMkFSPAvT2qwWlyWXFA9eAnnn2HF8cYN4
   Given Make sure token in local storage not empty                                                              # cucumber.definitions.AddObjectDefinition.assert_token_in_variable()
   When Send a http "PATCH" request to "/webhook/39a0f904-b0f2-4428-80a3-391cea5d7d04/api/object/567" with body: # cucumber.definitions.RegisterDefinition.send_request_http(java.lang.String,java.lang.String,java.lang.String)
     """
@@ -208,14 +213,14 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODE1NTMzNn0.rue
   And Partially updated object year in the response must be "2032"                                              # cucumber.definitions.PartiallyUpdateObjectDefinition.assert_partially_update_object_year(java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;&quot;, &quot;Register API&quot;](6)" classname="cucumber.runners.CucumberRunner" time="0.703">
+  <testcase name="runScenario[&quot;&quot;, &quot;Register API&quot;](6)" classname="cucumber.runners.CucumberRunner" time="0.712">
     <system-out><![CDATA[
 Scenario:                                                                    # src/test/resources/features/register.feature:6
   Given The base url in this feature is "https://whitesmokehouse.com"        # cucumber.definitions.RegisterDefinition.set_base_url(java.lang.String)
   When Send a http "POST" request to "/webhook/api/register" with body:      # cucumber.definitions.RegisterDefinition.send_request_http(java.lang.String,java.lang.String,java.lang.String)
     """
     {
-      "email": "user_28@test.com",
+      "email": "{email}",
       "password": "Password1!",
       "full_name": "Tester C",
       "department": "Executive",
@@ -224,13 +229,13 @@ Scenario:                                                                    # s
     """
   Then The response status must be 200                                       # cucumber.definitions.RegisterDefinition.send_request_http(int)
   And The response schema should be match with schema "register_schema.json" # cucumber.definitions.RegisterDefinition.schema_validation(java.lang.String)
-  And Email in the response must be "user_28@test.com"                       # cucumber.definitions.RegisterDefinition.assert_email(java.lang.String)
+  And Email in the response must be "{email}"                                # cucumber.definitions.RegisterDefinition.assert_email(java.lang.String)
   And Full name in the response must be "Tester C"                           # cucumber.definitions.RegisterDefinition.assert_full_name(java.lang.String)
   And Department in the response must be "Executive"                         # cucumber.definitions.RegisterDefinition.assert_department(java.lang.String)
   And Phone number in the response must be "081292983102"                    # cucumber.definitions.RegisterDefinition.assert_title(java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;&quot;, &quot;Update Object API&quot;](7)" classname="cucumber.runners.CucumberRunner" time="1.425">
+  <testcase name="runScenario[&quot;&quot;, &quot;Update Object API&quot;](7)" classname="cucumber.runners.CucumberRunner" time="1.489">
     <system-out><![CDATA[
 Scenario:                                                                                                      # src/test/resources/features/update_object.feature:14
   Given The base url in this feature is "https://whitesmokehouse.com"                                          # cucumber.definitions.RegisterDefinition.set_base_url(java.lang.String)
@@ -241,9 +246,9 @@ Scenario:                                                                       
       "password": "Password1!"
     }
     """
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODE1NTMzOH0.oXDFijDw6sYl1tM-Rubnt3b4RfMt96-oyIlCv2gvm3Q
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODMxOTg2OH0.JHqifHKD6zNso-lPmfp8Of6DN2LDm3XaE-SU4s8aE8c
   And Save the token from the response to local storage                                                        # cucumber.definitions.LoginDefinition.save_the_token()
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODE1NTMzOH0.oXDFijDw6sYl1tM-Rubnt3b4RfMt96-oyIlCv2gvm3Q
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODMxOTg2OH0.JHqifHKD6zNso-lPmfp8Of6DN2LDm3XaE-SU4s8aE8c
   Given Make sure token in local storage not empty                                                             # cucumber.definitions.AddObjectDefinition.assert_token_in_variable()
   When Send a http "PUT" request to "/webhook/37777abe-a5ef-4570-a383-c99b5f5f7906/api/objects/566" with body: # cucumber.definitions.RegisterDefinition.send_request_http(java.lang.String,java.lang.String,java.lang.String)
     """

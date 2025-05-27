@@ -29,6 +29,10 @@ public class DeleteObjectDefinition {
         DeleteObjectResponse deleteObjectResponse = objectMapper.readValue(response.body().asString(), DeleteObjectResponse.class);
 
         String actualMessage = deleteObjectResponse.getMessage();
+        String id = GetListObjectDefinition.id.toString();
+        id = id != null ? id : "UNKNOWN";
+        expectedMessage = expectedMessage.replace("{id}", id);
+
         Assert.assertEquals(actualMessage, expectedMessage, "Expected message to be " + expectedMessage + " but got " + actualMessage);
         System.out.println(actualMessage);
     }
