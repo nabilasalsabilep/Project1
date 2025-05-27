@@ -68,20 +68,6 @@ public class RegisterDefinition {
                 }
                 break;
         }
-        
-        // if (url.contains("/login")) {
-        //     LoginDefinition.response = response;
-        // } else if (method.equals("POST") && url.equals("/webhook/api/objects")) {
-        //     AddObjectDefinition.response = response;
-        // } else if (url.contains("/webhook/37777abe-a5ef-4570-a383-c99b5f5f7906/api/objects/")){
-        //     UpdateObjectDefinition.response = response;
-        // } else if (url.contains("/webhook/39a0f904-b0f2-4428-80a3-391cea5d7d04/api/object/")){
-        //     PartiallyUpdateObjectDefinition.response = response;
-        // } else if (method.equals("GET") && url.equals("/webhook/api/objects")){
-        //     GetListObject.response = response;
-        // } else if (url.contains("/webhook/d79a30ed-1066-48b6-83f5-556120afc46f/api/objects/")){
-        //     DeleteObjectDefinition.response = response;
-        // }
     }
 
     @Then("The response status must be {int}")
