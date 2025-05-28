@@ -13,7 +13,12 @@ Feature: Partially Update Object API
 
   Scenario:
     Given Make sure token in local storage not empty
-    When Send a http "PATCH" request to "/webhook/39a0f904-b0f2-4428-80a3-391cea5d7d04/api/object/567" with body:
+    When Send a http "GET" request to "/webhook/api/objects" with body:
+      """
+      {}
+      """
+    And Get first id from the list of objects
+    When Send a http "PATCH" request to "/webhook/39a0f904-b0f2-4428-80a3-391cea5d7d04/api/object/{id}" with body:
       """
       {
         "name": "Apple MacBook Pro 14",
@@ -22,6 +27,6 @@ Feature: Partially Update Object API
       """
     Then The response status must be 200
     And The response schema should be match with schema "partially_update_object_schema.json"
-    And Partially updated object id in the response must be 567
+    And Partially updated object id in the response must be "{id}"
     And Partially updated object name in the response must be "Apple MacBook Pro 14"
     And Partially updated object year in the response must be "2032"

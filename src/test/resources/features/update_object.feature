@@ -13,7 +13,12 @@ Feature: Update Object API
 
   Scenario:
     Given Make sure token in local storage not empty
-    When Send a http "PUT" request to "/webhook/37777abe-a5ef-4570-a383-c99b5f5f7906/api/objects/566" with body:
+    When Send a http "GET" request to "/webhook/api/objects" with body:
+      """
+      {}
+      """
+    And Get first id from the list of objects
+    When Send a http "PUT" request to "/webhook/37777abe-a5ef-4570-a383-c99b5f5f7906/api/objects/{id}" with body:
       """
       {
         "name": "Apple MacBook Pro 18",
@@ -30,7 +35,7 @@ Feature: Update Object API
       """
     Then The response status must be 200
     And The response schema should be match with schema "update_object_schema.json"
-    And Updated object id in the response must be 566
+    And Updated object id in the response must be "{id}"
     And Updated object name in the response must be "Apple MacBook Pro 18"
     And Updated object year in the response must be "2035"
     And Updated object price in the response must be 1855.88

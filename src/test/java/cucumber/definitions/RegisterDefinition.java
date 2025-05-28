@@ -27,14 +27,25 @@ public class RegisterDefinition {
 
     @When("Send a http {string} request to {string} with body:")
     public void send_request_http(String method, String url, String body) {
-        if(url.equals("/webhook/d79a30ed-1066-48b6-83f5-556120afc46f/api/objects/{id}")){
-            url = "/webhook/d79a30ed-1066-48b6-83f5-556120afc46f/api/objects/" + GetListObjectDefinition.id;
-        } else if(url.equals("/webhook/api/register")){
-            String randomString = "user_" + UUID.randomUUID().toString().substring(0, 8);
-            RegisterDefinition.email = randomString + "@test.com";
-            body = body.replace("{email}", RegisterDefinition.email);
+        switch (url) {
+            case "/webhook/37777abe-a5ef-4570-a383-c99b5f5f7906/api/objects/{id}":
+                url = "/webhook/37777abe-a5ef-4570-a383-c99b5f5f7906/api/objects/" + GetListObjectDefinition.id;
+                break;
+            case "/webhook/39a0f904-b0f2-4428-80a3-391cea5d7d04/api/object/{id}":
+                url = "/webhook/39a0f904-b0f2-4428-80a3-391cea5d7d04/api/object/" + GetListObjectDefinition.id;
+                break;
+            case "/webhook/d79a30ed-1066-48b6-83f5-556120afc46f/api/objects/{id}":
+                url = "/webhook/d79a30ed-1066-48b6-83f5-556120afc46f/api/objects/" + GetListObjectDefinition.id;
+                break;
+            default:
+                if(url.equals("/webhook/api/register")){
+                    String randomString = "user_" + UUID.randomUUID().toString().substring(0, 8);
+                    RegisterDefinition.email = randomString + "@test.com";
+                    body = body.replace("{email}", RegisterDefinition.email);
+                }
+                break;
         }
-
+        
         //Send request body
         response = RestAssured
                 .given()
@@ -56,15 +67,13 @@ public class RegisterDefinition {
                     GetListObjectDefinition.response = response;
                 }
                 break;
-            case "/webhook/37777abe-a5ef-4570-a383-c99b5f5f7906/api/objects/566":
-                UpdateObjectDefinition.response = response;
-                break;
-            case "/webhook/39a0f904-b0f2-4428-80a3-391cea5d7d04/api/object/567":
-                PartiallyUpdateObjectDefinition.response = response;
-                break;
             default:
                 if (url.contains("/webhook/d79a30ed-1066-48b6-83f5-556120afc46f/api/objects/")) {
                     DeleteObjectDefinition.response = response;
+                } else if (url.contains("/webhook/39a0f904-b0f2-4428-80a3-391cea5d7d04/api/object/")){
+                    PartiallyUpdateObjectDefinition.response = response;
+                } else if (url.contains("/webhook/37777abe-a5ef-4570-a383-c99b5f5f7906/api/objects/")){
+                    UpdateObjectDefinition.response = response;
                 }
                 break;
         }

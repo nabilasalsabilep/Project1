@@ -11,11 +11,13 @@ import io.restassured.response.Response;
 public class PartiallyUpdateObjectDefinition {
     public static Response response;
 
-    @And("Partially updated object id in the response must be {int}")
-    public void assert_partially_update_object_id(Integer objectID) throws Exception {
+    @And("Partially updated object id in the response must be {string}")
+    public void assert_partially_update_object_id(String objectID) throws Exception {
         ObjectMapper objectMapper = new ObjectMapper();
         PartiallyUpdateObjectResponse partiallyUpdateObjectResponse = objectMapper.readValue(response.body().asString(), PartiallyUpdateObjectResponse.class);
-        Assert.assertEquals(partiallyUpdateObjectResponse.getObjectID(), objectID, "Expected id " + objectID + " but got " + partiallyUpdateObjectResponse.getObjectID());
+
+        objectID = objectID.replace("{id}", GetListObjectDefinition.id.toString());
+        Assert.assertEquals(partiallyUpdateObjectResponse.getObjectID(), Integer.parseInt(objectID), "Expected id " + Integer.parseInt(objectID) + " but got " + partiallyUpdateObjectResponse.getObjectID());
     }
 
 

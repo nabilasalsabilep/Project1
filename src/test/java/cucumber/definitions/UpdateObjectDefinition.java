@@ -14,11 +14,13 @@ import io.restassured.response.Response;
 public class UpdateObjectDefinition {
     public static Response response;
 
-    @And("Updated object id in the response must be {int}")
-    public void assert_object_id(Integer objectID) throws Exception {
+    @And("Updated object id in the response must be {string}")
+    public void assert_object_id(String objectID) throws Exception {
         ObjectMapper objectMapper = new ObjectMapper();
         List<UpdateObjectResponse> updateObjectResponse = objectMapper.readValue(response.body().asString(), new TypeReference<List<UpdateObjectResponse>>() {});
-        Assert.assertEquals(updateObjectResponse.get(0).getObjectID(), objectID, "Expected name " + objectID + " but got " + updateObjectResponse.get(0).getObjectID());
+
+        objectID = objectID.replace("{id}", GetListObjectDefinition.id.toString());
+        Assert.assertEquals(updateObjectResponse.get(0).getObjectID(), Integer.parseInt(objectID), "Expected name " + Integer.parseInt(objectID) + " but got " + updateObjectResponse.get(0).getObjectID());
     }
 
     @And("Updated object name in the response must be {string}")

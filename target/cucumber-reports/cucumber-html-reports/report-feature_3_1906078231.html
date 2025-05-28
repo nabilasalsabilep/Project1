@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>CucumberProject</td>
-      <td>27 May 2025, 11:24</td>
+      <td>28 May 2025, 10:16</td>
     </tr>
   </tbody>
 </table>
@@ -127,18 +127,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Partially Update Object API</td>
-          <td      class="passed"    >10</td>
+          <td      class="passed"    >12</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">10</td>
+          <td class="total">12</td>
 
           <td  class="passed"    >1</td>
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="1533743000">1.533</td>
+          <td class="duration" data-value="2338174000">2.338</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -189,7 +189,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.735</span>
+  <span class="lead-duration duration">0.651</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -259,7 +259,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">Send a http <span class="argument">&quot;POST&quot;</span> request to <span class="argument">&quot;/webhook/api/login&quot;</span> with body:</span>
 
-  <span class="lead-duration duration">0.697</span>
+  <span class="lead-duration duration">0.639</span>
 
 </div>
 
@@ -299,7 +299,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Save the token from the response to local storage</span>
 
-  <span class="lead-duration duration">0.037</span>
+  <span class="lead-duration duration">0.011</span>
 
 </div>
 
@@ -337,7 +337,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.798</span>
+  <span class="lead-duration duration">1.686</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
@@ -405,9 +405,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">Send a http <span class="argument">&quot;PATCH&quot;</span> request to <span class="argument">&quot;/webhook/39a0f904-b0f2-4428-80a3-391cea5d7d04/api/object/567&quot;</span> with body:</span>
+  <span class="name">Send a http <span class="argument">&quot;GET&quot;</span> request to <span class="argument">&quot;/webhook/api/objects&quot;</span> with body:</span>
 
-  <span class="lead-duration duration">0.776</span>
+  <span class="lead-duration duration">0.894</span>
 
 </div>
 
@@ -425,6 +425,70 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-6" class="collapse collapsable-details">
+        <pre>{}</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Get first id from the list of objects</span>
+
+  <span class="lead-duration duration">0.039</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">Send a http <span class="argument">&quot;PATCH&quot;</span> request to <span class="argument">&quot;/webhook/39a0f904-b0f2-4428-80a3-391cea5d7d04/api/object/{id}&quot;</span> with body:</span>
+
+  <span class="lead-duration duration">0.729</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
         <pre>{
   &quot;name&quot;: &quot;Apple MacBook Pro 14&quot;,
   &quot;year&quot;: &quot;2032&quot;
@@ -474,7 +538,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">The response schema should be match with schema <span class="argument">&quot;partially_update_object_schema.json&quot;</span></span>
 
-  <span class="lead-duration duration">0.009</span>
+  <span class="lead-duration duration">0.007</span>
 
 </div>
 
@@ -499,9 +563,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">Partially updated object id in the response must be <span class="argument">567</span></span>
+  <span class="name">Partially updated object id in the response must be <span class="argument">&quot;{id}&quot;</span></span>
 
-  <span class="lead-duration duration">0.006</span>
+  <span class="lead-duration duration">0.008</span>
 
 </div>
 

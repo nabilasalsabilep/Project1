@@ -2,11 +2,9 @@ package cucumber.definitions;
 
 import java.util.List;
 
-import com.demo.testng.program.model.ResponseModel.AddObjectResponse;
 import com.demo.testng.program.model.ResponseModel.GetListObjectResponse;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import io.cucumber.java.en.And;
