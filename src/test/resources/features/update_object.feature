@@ -1,7 +1,6 @@
 Feature: Update Object API
 
   Background:
-    Given The base url in this feature is "https://whitesmokehouse.com"
     When Send a http "POST" request to "/webhook/api/login" with body:
       """
       {

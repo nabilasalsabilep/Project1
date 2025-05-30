@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="19.379" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-05-30T08:49:17.073594Z">
+<testcase classname="Add Object API" name="" time="3.9">
+<system-out><![CDATA[
+When Send a http "POST" request to "/webhook/api/login" with body:..........passed
+And Save the token from the response to local storage.......................passed
+Given Make sure token in local storage not empty............................passed
+When Send a http "POST" request to "/webhook/api/objects" with body:........passed
+Then The response status must be 200........................................passed
+And The response schema should be match with schema "add_object_schema.json".passed
+And Object name in the response must be "Apple MacBook Pro 16"..............passed
+And Object year in the response must be "2030"..............................passed
+And Object price in the response must be 1849.99............................passed
+And Object cpu model in the response must be "Intel Core i9"................passed
+And Object hard disk size in the response must be "1 TB"....................passed
+And Object capacity in the response must be "2 cpu".........................passed
+And Object screen size in the response must be "14 Inch"....................passed
+And Object color in the response must be "red"..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Detele Object API" name="" time="4.965">
+<system-out><![CDATA[
+When Send a http "POST" request to "/webhook/api/login" with body:..........passed
+And Save the token from the response to local storage.......................passed
+Given Make sure token in local storage not empty............................passed
+When Send a http "GET" request to "/webhook/api/objects" with body:.........passed
+And Get first id from the list of objects...................................passed
+When Send a http "DELETE" request to "/webhook/d79a30ed-1066-48b6-83f5-556120afc46f/api/objects/{id}" with body:.passed
+Then The response status must be 200........................................passed
+And The status in the response must be "deleted"............................passed
+And The message in the response must be "Object with id = {id}, has been deleted.".passed
+]]></system-out>
+</testcase>
+<testcase classname="Detele Object API" name="" time="2.372">
+<system-out><![CDATA[
+When Send a http "POST" request to "/webhook/api/login" with body:..........passed
+And Save the token from the response to local storage.......................passed
+Given Make sure token in local storage not empty............................passed
+When Send a http "DELETE" request to "/webhook/d79a30ed-1066-48b6-83f5-556120afc46f/api/objects/{id}" with body:.passed
+Then The response status must be 200........................................passed
+And The status in the response must be "failed".............................passed
+And The message in the response must be "object with id = {id} has been deleted or doesn't exist".passed
+]]></system-out>
+</testcase>
+<testcase classname="Login API" name="" time="0.7">
+<system-out><![CDATA[
+When Send a http "POST" request to "/webhook/api/login" with body:..........passed
+Then The response status must be 200........................................passed
+And Save the token from the response to local storage.......................passed
+]]></system-out>
+</testcase>
+<testcase classname="Partially Update Object API" name="" time="3.841">
+<system-out><![CDATA[
+When Send a http "POST" request to "/webhook/api/login" with body:..........passed
+And Save the token from the response to local storage.......................passed
+Given Make sure token in local storage not empty............................passed
+When Send a http "GET" request to "/webhook/api/objects" with body:.........passed
+And Get first id from the list of objects...................................passed
+When Send a http "PATCH" request to "/webhook/39a0f904-b0f2-4428-80a3-391cea5d7d04/api/object/{id}" with body:.passed
+Then The response status must be 200........................................passed
+And The response schema should be match with schema "partially_update_object_schema.json".passed
+And Partially updated object id in the response must be "{id}"..............passed
+And Partially updated object name in the response must be "Apple MacBook Pro 14".passed
+And Partially updated object year in the response must be "2032"............passed
+]]></system-out>
+</testcase>
+<testcase classname="Register API" name="" time="1.258">
+<system-out><![CDATA[
+When Send a http "POST" request to "/webhook/api/register" with body:.......passed
+Then The response status must be 200........................................passed
+And The response schema should be match with schema "register_schema.json"..passed
+And Email in the response must be "{email}".................................passed
+And Full name in the response must be "Tester C"............................passed
+And Department in the response must be "Executive"..........................passed
+And Phone number in the response must be "081292983102".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Update Object API" name="" time="2.153">
+<system-out><![CDATA[
+When Send a http "POST" request to "/webhook/api/login" with body:..........passed
+And Save the token from the response to local storage.......................passed
+Given Make sure token in local storage not empty............................passed
+When Send a http "GET" request to "/webhook/api/objects" with body:.........passed
+And Get first id from the list of objects...................................passed
+When Send a http "PUT" request to "/webhook/37777abe-a5ef-4570-a383-c99b5f5f7906/api/objects/{id}" with body:.passed
+Then The response status must be 200........................................passed
+And The response schema should be match with schema "update_object_schema.json".passed
+And Updated object id in the response must be "{id}"........................passed
+And Updated object name in the response must be "Apple MacBook Pro 18"......passed
+And Updated object year in the response must be "2035"......................passed
+And Updated object price in the response must be 1855.88....................passed
+And Updated object cpu model in the response must be "Intel Core i10".......passed
+And Updated object hard disk size in the response must be "2 TB"............passed
+And Updated object capacity in the response must be "3 cpu".................passed
+And Updated object screen size in the response must be "24 Inch"............passed
+And Updated object color in the response must be "red"......................passed
+]]></system-out>
+</testcase>
+</testsuite>

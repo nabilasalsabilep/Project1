@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="94.205" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="25.158" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -18,7 +18,7 @@
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="maven.home" value="/Users/salsa/Library/Application Support/Code/User/globalStorage/pleiades.java-extension-pack-jdk/maven/latest"/>
-    <property name="surefire.test.class.path" value="/Users/salsa/Documents/AfterOffice/ProjectTests/Project1/target/test-classes:/Users/salsa/Documents/AfterOffice/ProjectTests/Project1/target/classes:/Users/salsa/.m2/repository/org/testng/testng/7.11.0/testng-7.11.0.jar:/Users/salsa/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/salsa/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/Users/salsa/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/salsa/.m2/repository/io/rest-assured/rest-assured/5.5.1/rest-assured-5.5.1.jar:/Users/salsa/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/Users/salsa/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/Users/salsa/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/salsa/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/salsa/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/salsa/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/salsa/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/salsa/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/salsa/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/salsa/.m2/repository/io/rest-assured/json-path/5.5.1/json-path-5.5.1.jar:/Users/salsa/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/Users/salsa/.m2/repository/io/rest-assured/rest-assured-common/5.5.1/rest-assured-common-5.5.1.jar:/Users/salsa/.m2/repository/io/rest-assured/xml-path/5.5.1/xml-path-5.5.1.jar:/Users/salsa/.m2/repository/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar:/Users/salsa/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.19.0/jackson-databind-2.19.0.jar:/Users/salsa/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.19.0/jackson-annotations-2.19.0.jar:/Users/salsa/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.19.0/jackson-core-2.19.0.jar:/Users/salsa/.m2/repository/io/rest-assured/json-schema-validator/5.5.2/json-schema-validator-5.5.2.jar:/Users/salsa/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/salsa/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/salsa/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/salsa/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/salsa/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/salsa/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/salsa/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/salsa/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/salsa/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/salsa/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/salsa/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/salsa/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/salsa/.m2/repository/com/google/guava/guava/33.2.1-jre/guava-33.2.1-jre.jar:/Users/salsa/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/salsa/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/salsa/.m2/repository/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar:/Users/salsa/.m2/repository/com/google/errorprone/error_prone_annotations/2.26.1/error_prone_annotations-2.26.1.jar:/Users/salsa/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/salsa/.m2/repository/io/cucumber/cucumber-java/7.22.2/cucumber-java-7.22.2.jar:/Users/salsa/.m2/repository/io/cucumber/cucumber-core/7.22.2/cucumber-core-7.22.2.jar:/Users/salsa/.m2/repository/io/cucumber/cucumber-gherkin/7.22.2/cucumber-gherkin-7.22.2.jar:/Users/salsa/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.22.2/cucumber-gherkin-messages-7.22.2.jar:/Users/salsa/.m2/repository/io/cucumber/gherkin/32.1.1/gherkin-32.1.1.jar:/Users/salsa/.m2/repository/io/cucumber/messages/27.2.0/messages-27.2.0.jar:/Users/salsa/.m2/repository/io/cucumber/testng-xml-formatter/0.3.1/testng-xml-formatter-0.3.1.jar:/Users/salsa/.m2/repository/io/cucumber/query/13.2.0/query-13.2.0.jar:/Users/salsa/.m2/repository/io/cucumber/tag-expressions/6.1.2/tag-expressions-6.1.2.jar:/Users/salsa/.m2/repository/io/cucumber/cucumber-expressions/18.0.1/cucumber-expressions-18.0.1.jar:/Users/salsa/.m2/repository/io/cucumber/datatable/7.22.2/datatable-7.22.2.jar:/Users/salsa/.m2/repository/io/cucumber/cucumber-plugin/7.22.2/cucumber-plugin-7.22.2.jar:/Users/salsa/.m2/repository/io/cucumber/docstring/7.22.2/docstring-7.22.2.jar:/Users/salsa/.m2/repository/io/cucumber/html-formatter/21.10.1/html-formatter-21.10.1.jar:/Users/salsa/.m2/repository/io/cucumber/junit-xml-formatter/0.7.1/junit-xml-formatter-0.7.1.jar:/Users/salsa/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar:/Users/salsa/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/salsa/.m2/repository/io/cucumber/cucumber-testng/7.22.2/cucumber-testng-7.22.2.jar:/Users/salsa/.m2/repository/net/masterthought/cucumber-reporting/5.7.0/cucumber-reporting-5.7.0.jar:/Users/salsa/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.0/jackson-datatype-jsr310-2.13.0.jar:/Users/salsa/.m2/repository/org/apache/velocity/velocity-engine-core/2.3/velocity-engine-core-2.3.jar:/Users/salsa/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/salsa/.m2/repository/joda-time/joda-time/2.10.10/joda-time-2.10.10.jar:/Users/salsa/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/salsa/.m2/repository/commons-io/commons-io/2.7/commons-io-2.7.jar:/Users/salsa/.m2/repository/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar:/Users/salsa/.m2/repository/org/jsoup/jsoup/1.14.2/jsoup-1.14.2.jar:/Users/salsa/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20211018.2/owasp-java-html-sanitizer-20211018.2.jar:/Users/salsa/.m2/repository/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar:/Users/salsa/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/salsa/Documents/AfterOffice/ProjectTests/Project1/target/test-classes:/Users/salsa/Documents/AfterOffice/ProjectTests/Project1/target/classes:/Users/salsa/.m2/repository/org/testng/testng/7.11.0/testng-7.11.0.jar:/Users/salsa/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/salsa/.m2/repository/org/jcommander/jcommander/1.83/jcommander-1.83.jar:/Users/salsa/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/salsa/.m2/repository/io/rest-assured/rest-assured/5.5.1/rest-assured-5.5.1.jar:/Users/salsa/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/Users/salsa/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/Users/salsa/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/salsa/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/salsa/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/salsa/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/salsa/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/salsa/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/salsa/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/salsa/.m2/repository/io/rest-assured/json-path/5.5.1/json-path-5.5.1.jar:/Users/salsa/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/Users/salsa/.m2/repository/io/rest-assured/rest-assured-common/5.5.1/rest-assured-common-5.5.1.jar:/Users/salsa/.m2/repository/io/rest-assured/xml-path/5.5.1/xml-path-5.5.1.jar:/Users/salsa/.m2/repository/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar:/Users/salsa/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.19.0/jackson-databind-2.19.0.jar:/Users/salsa/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.19.0/jackson-annotations-2.19.0.jar:/Users/salsa/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.19.0/jackson-core-2.19.0.jar:/Users/salsa/.m2/repository/io/rest-assured/json-schema-validator/5.5.2/json-schema-validator-5.5.2.jar:/Users/salsa/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/salsa/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/salsa/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/salsa/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/salsa/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/salsa/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/salsa/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/salsa/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/salsa/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/salsa/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/salsa/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/salsa/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/salsa/.m2/repository/com/google/guava/guava/33.2.1-jre/guava-33.2.1-jre.jar:/Users/salsa/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/salsa/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/salsa/.m2/repository/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar:/Users/salsa/.m2/repository/com/google/errorprone/error_prone_annotations/2.26.1/error_prone_annotations-2.26.1.jar:/Users/salsa/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/salsa/.m2/repository/io/cucumber/cucumber-java/7.22.2/cucumber-java-7.22.2.jar:/Users/salsa/.m2/repository/io/cucumber/cucumber-core/7.22.2/cucumber-core-7.22.2.jar:/Users/salsa/.m2/repository/io/cucumber/cucumber-gherkin/7.22.2/cucumber-gherkin-7.22.2.jar:/Users/salsa/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.22.2/cucumber-gherkin-messages-7.22.2.jar:/Users/salsa/.m2/repository/io/cucumber/gherkin/32.1.1/gherkin-32.1.1.jar:/Users/salsa/.m2/repository/io/cucumber/messages/27.2.0/messages-27.2.0.jar:/Users/salsa/.m2/repository/io/cucumber/testng-xml-formatter/0.3.1/testng-xml-formatter-0.3.1.jar:/Users/salsa/.m2/repository/io/cucumber/query/13.2.0/query-13.2.0.jar:/Users/salsa/.m2/repository/io/cucumber/tag-expressions/6.1.2/tag-expressions-6.1.2.jar:/Users/salsa/.m2/repository/io/cucumber/cucumber-expressions/18.0.1/cucumber-expressions-18.0.1.jar:/Users/salsa/.m2/repository/io/cucumber/datatable/7.22.2/datatable-7.22.2.jar:/Users/salsa/.m2/repository/io/cucumber/cucumber-plugin/7.22.2/cucumber-plugin-7.22.2.jar:/Users/salsa/.m2/repository/io/cucumber/docstring/7.22.2/docstring-7.22.2.jar:/Users/salsa/.m2/repository/io/cucumber/html-formatter/21.10.1/html-formatter-21.10.1.jar:/Users/salsa/.m2/repository/io/cucumber/junit-xml-formatter/0.7.1/junit-xml-formatter-0.7.1.jar:/Users/salsa/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar:/Users/salsa/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/salsa/.m2/repository/io/cucumber/cucumber-testng/7.22.2/cucumber-testng-7.22.2.jar:/Users/salsa/.m2/repository/net/masterthought/cucumber-reporting/5.7.0/cucumber-reporting-5.7.0.jar:/Users/salsa/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.0/jackson-datatype-jsr310-2.13.0.jar:/Users/salsa/.m2/repository/org/apache/velocity/velocity-engine-core/2.3/velocity-engine-core-2.3.jar:/Users/salsa/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/salsa/.m2/repository/joda-time/joda-time/2.10.10/joda-time-2.10.10.jar:/Users/salsa/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/salsa/.m2/repository/commons-io/commons-io/2.7/commons-io-2.7.jar:/Users/salsa/.m2/repository/org/codehaus/plexus/plexus-utils/3.3.0/plexus-utils-3.3.0.jar:/Users/salsa/.m2/repository/org/jsoup/jsoup/1.14.2/jsoup-1.14.2.jar:/Users/salsa/.m2/repository/com/googlecode/owasp-java-html-sanitizer/owasp-java-html-sanitizer/20211018.2/owasp-java-html-sanitizer-20211018.2.jar:/Users/salsa/.m2/repository/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar:/Users/salsa/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/Users/salsa/.m2/repository/io/cucumber/cucumber-junit/7.21.1/cucumber-junit-7.21.1.jar:/Users/salsa/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/salsa/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/salsa/.m2/repository/io/github/cdimascio/dotenv-java/3.0.0/dotenv-java-3.0.0.jar:/Users/salsa/.m2/repository/io/cucumber/cucumber-picocontainer/7.22.2/cucumber-picocontainer-7.22.2.jar:/Users/salsa/.m2/repository/org/picocontainer/picocontainer/2.15.2/picocontainer-2.15.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/salsa"/>
     <property name="user.language" value="en"/>
@@ -65,10 +65,9 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="runScenario[&quot;&quot;, &quot;Add Object API&quot;](1)" classname="cucumber.runners.CucumberRunner" time="78.461">
+  <testcase name="runScenario[&quot;&quot;, &quot;Add Object API&quot;](1)" classname="cucumber.runners.CucumberRunner" time="3.968">
     <system-out><![CDATA[
-Scenario:                                                                      # src/test/resources/features/add_object.feature:14
-  Given The base url in this feature is "https://whitesmokehouse.com"          # cucumber.definitions.RegisterDefinition.set_base_url(java.lang.String)
+Scenario:                                                                      # src/test/resources/features/add_object.feature:13
   When Send a http "POST" request to "/webhook/api/login" with body:           # cucumber.definitions.RegisterDefinition.send_request_http(java.lang.String,java.lang.String,java.lang.String)
     """
     {
@@ -76,9 +75,9 @@ Scenario:                                                                      #
       "password": "Password1!"
     }
     """
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODQwMjEyNn0.EA01ZP2B6iEYBy1Cqb5BaM59_RBGmB3VUIpJWxdz4A4
+Saved token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODU5NDk2MX0.rHv5TQu2APbpqZMkQIFMrHrZolst73j-MLqtk-MEx18
   And Save the token from the response to local storage                        # cucumber.definitions.LoginDefinition.save_the_token()
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODQwMjEyNn0.EA01ZP2B6iEYBy1Cqb5BaM59_RBGmB3VUIpJWxdz4A4
+Token from context: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODU5NDk2MX0.rHv5TQu2APbpqZMkQIFMrHrZolst73j-MLqtk-MEx18
   Given Make sure token in local storage not empty                             # cucumber.definitions.AddObjectDefinition.assert_token_in_variable()
   When Send a http "POST" request to "/webhook/api/objects" with body:         # cucumber.definitions.RegisterDefinition.send_request_http(java.lang.String,java.lang.String,java.lang.String)
     """
@@ -111,10 +110,9 @@ SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;&quot;, &quot;Detele Object API&quot;](2)" classname="cucumber.runners.CucumberRunner" time="2.619">
+  <testcase name="runScenario[&quot;&quot;, &quot;Detele Object API&quot;](2)" classname="cucumber.runners.CucumberRunner" time="4.968">
     <system-out><![CDATA[
-Scenario:                                                                                                          # src/test/resources/features/delete_object.feature:14
-  Given The base url in this feature is "https://whitesmokehouse.com"                                              # cucumber.definitions.RegisterDefinition.set_base_url(java.lang.String)
+Scenario:                                                                                                          # src/test/resources/features/delete_object.feature:13
   When Send a http "POST" request to "/webhook/api/login" with body:                                               # cucumber.definitions.RegisterDefinition.send_request_http(java.lang.String,java.lang.String,java.lang.String)
     """
     {
@@ -122,9 +120,9 @@ Scenario:                                                                       
       "password": "Password1!"
     }
     """
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODQwMjIwM30.oCWHuZCdpqNHkL-YwvJBil3dY7190X8enG6_8EC67TI
+Saved token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODU5NDk2NH0.2DncoF-_z929hcZKQKE1yyrPEutUEbFAdlhDDwqyT88
   And Save the token from the response to local storage                                                            # cucumber.definitions.LoginDefinition.save_the_token()
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODQwMjIwM30.oCWHuZCdpqNHkL-YwvJBil3dY7190X8enG6_8EC67TI
+Token from context: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODU5NDk2NH0.2DncoF-_z929hcZKQKE1yyrPEutUEbFAdlhDDwqyT88
   Given Make sure token in local storage not empty                                                                 # cucumber.definitions.AddObjectDefinition.assert_token_in_variable()
   When Send a http "GET" request to "/webhook/api/objects" with body:                                              # cucumber.definitions.RegisterDefinition.send_request_http(java.lang.String,java.lang.String,java.lang.String)
     """
@@ -138,14 +136,13 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODQwMjIwM30.oCW
   Then The response status must be 200                                                                             # cucumber.definitions.RegisterDefinition.send_request_http(int)
 deleted
   And The status in the response must be "deleted"                                                                 # cucumber.definitions.DeleteObjectDefinition.assert_status_deleted(java.lang.String)
-Object with id = 36, has been deleted.
+Object with id = 93, has been deleted.
   And The message in the response must be "Object with id = {id}, has been deleted."                               # cucumber.definitions.DeleteObjectDefinition.assert_message_deleted(java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;&quot;, &quot;Detele Object API&quot;](3)" classname="cucumber.runners.CucumberRunner" time="1.262">
+  <testcase name="runScenario[&quot;&quot;, &quot;Detele Object API&quot;](3)" classname="cucumber.runners.CucumberRunner" time="2.378">
     <system-out><![CDATA[
-Scenario:                                                                                                          # src/test/resources/features/delete_object.feature:29
-  Given The base url in this feature is "https://whitesmokehouse.com"                                              # cucumber.definitions.RegisterDefinition.set_base_url(java.lang.String)
+Scenario:                                                                                                          # src/test/resources/features/delete_object.feature:28
   When Send a http "POST" request to "/webhook/api/login" with body:                                               # cucumber.definitions.RegisterDefinition.send_request_http(java.lang.String,java.lang.String,java.lang.String)
     """
     {
@@ -153,9 +150,9 @@ Scenario:                                                                       
       "password": "Password1!"
     }
     """
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODQwMjIwNn0.1H5UFsKwVBKUB-nns86RgkhpBY5cOm5mrjRPl5v5SQQ
+Saved token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODU5NDk2OH0.qDT5gq0ChhYEEny2xepNxARQvZXQR9CFrdxXv4ddJNo
   And Save the token from the response to local storage                                                            # cucumber.definitions.LoginDefinition.save_the_token()
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODQwMjIwNn0.1H5UFsKwVBKUB-nns86RgkhpBY5cOm5mrjRPl5v5SQQ
+Token from context: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODU5NDk2OH0.qDT5gq0ChhYEEny2xepNxARQvZXQR9CFrdxXv4ddJNo
   Given Make sure token in local storage not empty                                                                 # cucumber.definitions.AddObjectDefinition.assert_token_in_variable()
   When Send a http "DELETE" request to "/webhook/d79a30ed-1066-48b6-83f5-556120afc46f/api/objects/{id}" with body: # cucumber.definitions.RegisterDefinition.send_request_http(java.lang.String,java.lang.String,java.lang.String)
     """
@@ -164,30 +161,28 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODQwMjIwNn0.1H5
   Then The response status must be 200                                                                             # cucumber.definitions.RegisterDefinition.send_request_http(int)
 failed
   And The status in the response must be "failed"                                                                  # cucumber.definitions.DeleteObjectDefinition.assert_status_deleted(java.lang.String)
-object with id = 36 has been deleted or doesn't exist
+object with id = 93 has been deleted or doesn't exist
   And The message in the response must be "object with id = {id} has been deleted or doesn't exist"                # cucumber.definitions.DeleteObjectDefinition.assert_message_deleted(java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;&quot;, &quot;Login API&quot;](4)" classname="cucumber.runners.CucumberRunner" time="0.623">
+  <testcase name="runScenario[&quot;&quot;, &quot;Login API&quot;](4)" classname="cucumber.runners.CucumberRunner" time="0.703">
     <system-out><![CDATA[
-Scenario:                                                             # src/test/resources/features/login.feature:6
-  Given The base url in this feature is "https://whitesmokehouse.com" # cucumber.definitions.RegisterDefinition.set_base_url(java.lang.String)
-  When Send a http "POST" request to "/webhook/api/login" with body:  # cucumber.definitions.RegisterDefinition.send_request_http(java.lang.String,java.lang.String,java.lang.String)
+Scenario:                                                            # src/test/resources/features/login.feature:3
+  When Send a http "POST" request to "/webhook/api/login" with body: # cucumber.definitions.RegisterDefinition.send_request_http(java.lang.String,java.lang.String,java.lang.String)
     """
     {
       "email": "user_15@test.com",
       "password": "Password1!"
     }
     """
-  Then The response status must be 200                                # cucumber.definitions.RegisterDefinition.send_request_http(int)
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODQwMjIwN30.EespkD_TyIgDI_t6kUMdCaA6q9yYMDoVXPZo51GJ_3Y
-  And Save the token from the response to local storage               # cucumber.definitions.LoginDefinition.save_the_token()
+  Then The response status must be 200                               # cucumber.definitions.RegisterDefinition.send_request_http(int)
+Saved token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODU5NDk3MX0.DOrcS7jAz0_bMwbapRqGegfmG9Tfi5_zP8IBxTcNQBs
+  And Save the token from the response to local storage              # cucumber.definitions.LoginDefinition.save_the_token()
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;&quot;, &quot;Partially Update Object API&quot;](5)" classname="cucumber.runners.CucumberRunner" time="2.347">
+  <testcase name="runScenario[&quot;&quot;, &quot;Partially Update Object API&quot;](5)" classname="cucumber.runners.CucumberRunner" time="3.843">
     <system-out><![CDATA[
-Scenario:                                                                                                        # src/test/resources/features/partially_update_object.feature:14
-  Given The base url in this feature is "https://whitesmokehouse.com"                                            # cucumber.definitions.RegisterDefinition.set_base_url(java.lang.String)
+Scenario:                                                                                                        # src/test/resources/features/partially_update_object.feature:13
   When Send a http "POST" request to "/webhook/api/login" with body:                                             # cucumber.definitions.RegisterDefinition.send_request_http(java.lang.String,java.lang.String,java.lang.String)
     """
     {
@@ -195,9 +190,9 @@ Scenario:                                                                       
       "password": "Password1!"
     }
     """
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODQwMjIwOH0.tWGJGl4lS4k6rSp_XyBur2a_a4kuxs7yp5piIVGzbl8
+Saved token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODU5NDk3Mn0.VjotrrdKs75N0U837ZzzD-dLHAPm8TJX-uAsNeFfi3A
   And Save the token from the response to local storage                                                          # cucumber.definitions.LoginDefinition.save_the_token()
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODQwMjIwOH0.tWGJGl4lS4k6rSp_XyBur2a_a4kuxs7yp5piIVGzbl8
+Token from context: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODU5NDk3Mn0.VjotrrdKs75N0U837ZzzD-dLHAPm8TJX-uAsNeFfi3A
   Given Make sure token in local storage not empty                                                               # cucumber.definitions.AddObjectDefinition.assert_token_in_variable()
   When Send a http "GET" request to "/webhook/api/objects" with body:                                            # cucumber.definitions.RegisterDefinition.send_request_http(java.lang.String,java.lang.String,java.lang.String)
     """
@@ -218,10 +213,9 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODQwMjIwOH0.tWG
   And Partially updated object year in the response must be "2032"                                               # cucumber.definitions.PartiallyUpdateObjectDefinition.assert_partially_update_object_year(java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;&quot;, &quot;Register API&quot;](6)" classname="cucumber.runners.CucumberRunner" time="0.683">
+  <testcase name="runScenario[&quot;&quot;, &quot;Register API&quot;](6)" classname="cucumber.runners.CucumberRunner" time="1.26">
     <system-out><![CDATA[
-Scenario:                                                                    # src/test/resources/features/register.feature:6
-  Given The base url in this feature is "https://whitesmokehouse.com"        # cucumber.definitions.RegisterDefinition.set_base_url(java.lang.String)
+Scenario:                                                                    # src/test/resources/features/register.feature:3
   When Send a http "POST" request to "/webhook/api/register" with body:      # cucumber.definitions.RegisterDefinition.send_request_http(java.lang.String,java.lang.String,java.lang.String)
     """
     {
@@ -240,10 +234,9 @@ Scenario:                                                                    # s
   And Phone number in the response must be "081292983102"                    # cucumber.definitions.RegisterDefinition.assert_title(java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;&quot;, &quot;Update Object API&quot;](7)" classname="cucumber.runners.CucumberRunner" time="2.216">
+  <testcase name="runScenario[&quot;&quot;, &quot;Update Object API&quot;](7)" classname="cucumber.runners.CucumberRunner" time="2.154">
     <system-out><![CDATA[
-Scenario:                                                                                                       # src/test/resources/features/update_object.feature:14
-  Given The base url in this feature is "https://whitesmokehouse.com"                                           # cucumber.definitions.RegisterDefinition.set_base_url(java.lang.String)
+Scenario:                                                                                                       # src/test/resources/features/update_object.feature:13
   When Send a http "POST" request to "/webhook/api/login" with body:                                            # cucumber.definitions.RegisterDefinition.send_request_http(java.lang.String,java.lang.String,java.lang.String)
     """
     {
@@ -251,9 +244,9 @@ Scenario:                                                                       
       "password": "Password1!"
     }
     """
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODQwMjIxMX0.BB9i39Sf1xmRL3an7OM-bc4wS8zj79Fs4clKxIYWy_Q
+Saved token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODU5NDk3Nn0.Ueeb6v2qLDX43Yw7Gtb3z21AQlsD4r6y9xrH7STKK1c
   And Save the token from the response to local storage                                                         # cucumber.definitions.LoginDefinition.save_the_token()
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODQwMjIxMX0.BB9i39Sf1xmRL3an7OM-bc4wS8zj79Fs4clKxIYWy_Q
+Token from context: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OCIsImlhdCI6MTc0ODU5NDk3Nn0.Ueeb6v2qLDX43Yw7Gtb3z21AQlsD4r6y9xrH7STKK1c
   Given Make sure token in local storage not empty                                                              # cucumber.definitions.AddObjectDefinition.assert_token_in_variable()
   When Send a http "GET" request to "/webhook/api/objects" with body:                                           # cucumber.definitions.RegisterDefinition.send_request_http(java.lang.String,java.lang.String,java.lang.String)
     """

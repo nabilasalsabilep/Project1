@@ -1,8 +1,5 @@
 Feature: Register API
 
-  Background:
-    Given The base url in this feature is "https://whitesmokehouse.com"
-
   Scenario:
     When Send a http "POST" request to "/webhook/api/register" with body:
       """

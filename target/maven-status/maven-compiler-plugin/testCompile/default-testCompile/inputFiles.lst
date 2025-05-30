@@ -1,3 +1,5 @@
+/Users/salsa/Documents/AfterOffice/ProjectTests/Project1/src/test/java/cucumber/apiengine/Endpoints.java
+/Users/salsa/Documents/AfterOffice/ProjectTests/Project1/src/test/java/cucumber/context/TestContext.java
 /Users/salsa/Documents/AfterOffice/ProjectTests/Project1/src/test/java/cucumber/definitions/AddObjectDefinition.java
 /Users/salsa/Documents/AfterOffice/ProjectTests/Project1/src/test/java/cucumber/definitions/DeleteObjectDefinition.java
 /Users/salsa/Documents/AfterOffice/ProjectTests/Project1/src/test/java/cucumber/definitions/GetListObjectDefinition.java
@@ -5,6 +7,7 @@
 /Users/salsa/Documents/AfterOffice/ProjectTests/Project1/src/test/java/cucumber/definitions/PartiallyUpdateObjectDefinition.java
 /Users/salsa/Documents/AfterOffice/ProjectTests/Project1/src/test/java/cucumber/definitions/RegisterDefinition.java
 /Users/salsa/Documents/AfterOffice/ProjectTests/Project1/src/test/java/cucumber/definitions/UpdateObjectDefinition.java
+/Users/salsa/Documents/AfterOffice/ProjectTests/Project1/src/test/java/cucumber/helper/ConfigManager.java
 /Users/salsa/Documents/AfterOffice/ProjectTests/Project1/src/test/java/cucumber/helper/GenerateReport.java
 /Users/salsa/Documents/AfterOffice/ProjectTests/Project1/src/test/java/cucumber/runners/CucumberRunner.java
 /Users/salsa/Documents/AfterOffice/ProjectTests/Project1/src/test/java/data/Product.java

@@ -1,82 +1,30 @@
 package cucumber.definitions;
 
-import java.util.UUID;
-
 import org.testng.Assert;
 
 import com.demo.testng.program.model.ResponseModel.RegisterResponse;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
+import cucumber.apiengine.Endpoints;
+import cucumber.context.TestContext;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.restassured.RestAssured;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 
-public class RegisterDefinition {
-    public static String baseUrl;
+public class RegisterDefinition extends Endpoints{
     public static Response response;
     public static String email;
+    private final TestContext context;
 
-    @Given("The base url in this feature is {string}")
-    public void set_base_url(String baseUrl) {
-        RegisterDefinition.baseUrl = baseUrl;
+    public RegisterDefinition(TestContext context) {
+        this.context = context;
     }
 
     @When("Send a http {string} request to {string} with body:")
     public void send_request_http(String method, String url, String body) {
-        switch (url) {
-            case "/webhook/37777abe-a5ef-4570-a383-c99b5f5f7906/api/objects/{id}":
-                url = "/webhook/37777abe-a5ef-4570-a383-c99b5f5f7906/api/objects/" + GetListObjectDefinition.id;
-                break;
-            case "/webhook/39a0f904-b0f2-4428-80a3-391cea5d7d04/api/object/{id}":
-                url = "/webhook/39a0f904-b0f2-4428-80a3-391cea5d7d04/api/object/" + GetListObjectDefinition.id;
-                break;
-            case "/webhook/d79a30ed-1066-48b6-83f5-556120afc46f/api/objects/{id}":
-                url = "/webhook/d79a30ed-1066-48b6-83f5-556120afc46f/api/objects/" + GetListObjectDefinition.id;
-                break;
-            default:
-                if(url.equals("/webhook/api/register")){
-                    String randomString = "user_" + UUID.randomUUID().toString().substring(0, 8);
-                    RegisterDefinition.email = randomString + "@test.com";
-                    body = body.replace("{email}", RegisterDefinition.email);
-                }
-                break;
-        }
-        
-        //Send request body
-        response = RestAssured
-                .given()
-                .contentType("application/json")
-                .header("Authorization", LoginDefinition.token != null ? "Bearer " + LoginDefinition.token : "")
-                .body(body)
-                .when()
-                .request(method, RegisterDefinition.baseUrl + url);
-        
-        switch (url) {
-            case "/webhook/login":
-                LoginDefinition.response = response;
-                break;
-            case "/webhook/api/objects":
-                if (method.equals("POST")){
-                    AddObjectDefinition.response = response;
-                }
-                if (method.equals("GET")){
-                    GetListObjectDefinition.response = response;
-                }
-                break;
-            default:
-                if (url.contains("/webhook/d79a30ed-1066-48b6-83f5-556120afc46f/api/objects/")) {
-                    DeleteObjectDefinition.response = response;
-                } else if (url.contains("/webhook/39a0f904-b0f2-4428-80a3-391cea5d7d04/api/object/")){
-                    PartiallyUpdateObjectDefinition.response = response;
-                } else if (url.contains("/webhook/37777abe-a5ef-4570-a383-c99b5f5f7906/api/objects/")){
-                    UpdateObjectDefinition.response = response;
-                }
-                break;
-        }
+        response = sendRequest(method, url, body);
+        context.setResponse(response);
     }
 
     @Then("The response status must be {int}")
@@ -86,13 +34,12 @@ public class RegisterDefinition {
 
     @And("The response schema should be match with schema {string}")
     public void schema_validation(String schemaPath) {
-        response.then().assertThat().body(JsonSchemaValidator.matchesJsonSchemaInClasspath(schemaPath));
+        context.getResponse().then().assertThat().body(JsonSchemaValidator.matchesJsonSchemaInClasspath(schemaPath));
     }
 
     @And("Email in the response must be {string}")
     public void assert_email(String email) throws Exception {
-        ObjectMapper mapper = new ObjectMapper();
-        RegisterResponse registerResponse = mapper.readValue(response.asString(), RegisterResponse.class);
+        RegisterResponse registerResponse = context.getResponse().as(RegisterResponse.class);
 
         email = email.replace("{email}", RegisterDefinition.email);
         Assert.assertEquals(registerResponse.getEmail(), RegisterDefinition.email, "Expected email " + RegisterDefinition.email + " but got " + registerResponse.getEmail());
@@ -100,22 +47,19 @@ public class RegisterDefinition {
 
     @And("Full name in the response must be {string}")
     public void assert_full_name(String fullName) throws Exception {
-        ObjectMapper mapper = new ObjectMapper();
-        RegisterResponse registerResponse = mapper.readValue(response.asString(), RegisterResponse.class);
+        RegisterResponse registerResponse = context.getResponse().as(RegisterResponse.class);
         Assert.assertEquals(registerResponse.getFullName(), fullName, "Expected full name " + fullName + " but got " + registerResponse.getFullName());
     }
     
     @And("Department in the response must be {string}")
     public void assert_department(String department) throws Exception {
-        ObjectMapper mapper = new ObjectMapper();
-        RegisterResponse registerResponse = mapper.readValue(response.asString(), RegisterResponse.class);
+        RegisterResponse registerResponse = context.getResponse().as(RegisterResponse.class);
         Assert.assertEquals(registerResponse.getDepartment(), department, "Expected department " + department + " but got " + registerResponse.getDepartment());
     }
 
     @And("Phone number in the response must be {string}")
     public void assert_title(String phoneNumber) throws Exception {
-        ObjectMapper mapper = new ObjectMapper();
-        RegisterResponse registerResponse = mapper.readValue(response.asString(), RegisterResponse.class);
+        RegisterResponse registerResponse = context.getResponse().as(RegisterResponse.class);
         Assert.assertEquals(registerResponse.getPhoneNumber(), phoneNumber, "Expected phone number " + phoneNumber + " but got " + registerResponse.getPhoneNumber());
     }
 }
