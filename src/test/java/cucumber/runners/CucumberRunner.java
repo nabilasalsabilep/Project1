@@ -14,7 +14,7 @@ import io.cucumber.testng.CucumberOptions;
                 "json:target/cucumber-report.json",          // JSON report
                 "junit:target/cucumber-report.xml"           // JUnit XML report
             },
-    monochrome = true
+    monochrome = true 
 )
 public class CucumberRunner extends AbstractTestNGCucumberTests {
     @AfterSuite

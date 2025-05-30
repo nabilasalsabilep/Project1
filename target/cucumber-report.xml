@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="19.379" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-05-30T08:49:17.073594Z">
-<testcase classname="Add Object API" name="" time="3.9">
+<testsuite name="Cucumber" time="15.514" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-05-30T09:13:38.580178Z">
+<testcase classname="Add Object API" name="" time="3.265">
 <system-out><![CDATA[
 When Send a http "POST" request to "/webhook/api/login" with body:..........passed
 And Save the token from the response to local storage.......................passed
@@ -18,7 +18,7 @@ And Object screen size in the response must be "14 Inch"....................pass
 And Object color in the response must be "red"..............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Detele Object API" name="" time="4.965">
+<testcase classname="Detele Object API" name="" time="3.953">
 <system-out><![CDATA[
 When Send a http "POST" request to "/webhook/api/login" with body:..........passed
 And Save the token from the response to local storage.......................passed
@@ -31,7 +31,7 @@ And The status in the response must be "deleted"............................pass
 And The message in the response must be "Object with id = {id}, has been deleted.".passed
 ]]></system-out>
 </testcase>
-<testcase classname="Detele Object API" name="" time="2.372">
+<testcase classname="Detele Object API" name="" time="1.392">
 <system-out><![CDATA[
 When Send a http "POST" request to "/webhook/api/login" with body:..........passed
 And Save the token from the response to local storage.......................passed
@@ -42,14 +42,14 @@ And The status in the response must be "failed".............................pass
 And The message in the response must be "object with id = {id} has been deleted or doesn't exist".passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login API" name="" time="0.7">
+<testcase classname="Login API" name="" time="0.642">
 <system-out><![CDATA[
 When Send a http "POST" request to "/webhook/api/login" with body:..........passed
 Then The response status must be 200........................................passed
 And Save the token from the response to local storage.......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Partially Update Object API" name="" time="3.841">
+<testcase classname="Partially Update Object API" name="" time="2.654">
 <system-out><![CDATA[
 When Send a http "POST" request to "/webhook/api/login" with body:..........passed
 And Save the token from the response to local storage.......................passed
@@ -64,7 +64,7 @@ And Partially updated object name in the response must be "Apple MacBook Pro 14"
 And Partially updated object year in the response must be "2032"............passed
 ]]></system-out>
 </testcase>
-<testcase classname="Register API" name="" time="1.258">
+<testcase classname="Register API" name="" time="0.657">
 <system-out><![CDATA[
 When Send a http "POST" request to "/webhook/api/register" with body:.......passed
 Then The response status must be 200........................................passed
@@ -75,7 +75,7 @@ And Department in the response must be "Executive"..........................pass
 And Phone number in the response must be "081292983102".....................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Update Object API" name="" time="2.153">
+<testcase classname="Update Object API" name="" time="2.828">
 <system-out><![CDATA[
 When Send a http "POST" request to "/webhook/api/login" with body:..........passed
 And Save the token from the response to local storage.......................passed
