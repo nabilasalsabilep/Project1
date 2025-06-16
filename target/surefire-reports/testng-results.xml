@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-16T17:08:17 WIB" name="SeleniumScenarioSuite" finished-at="2025-06-16T17:08:33 WIB" duration-ms="15813">
+  <suite started-at="2025-06-16T17:20:23 WIB" name="SeleniumScenarioSuite" finished-at="2025-06-16T17:20:40 WIB" duration-ms="16152">
     <groups>
     </groups>
-    <test started-at="2025-06-16T17:08:17 WIB" name="SeleniumScenario" finished-at="2025-06-16T17:08:33 WIB" duration-ms="15813">
+    <test started-at="2025-06-16T17:20:23 WIB" name="SeleniumScenario" finished-at="2025-06-16T17:20:40 WIB" duration-ms="16152">
       <class name="selenium_scenario.CheckOutFlowE2E">
-        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:selenium_scenario.CheckOutFlowE2E@65c17e38]" started-at="2025-06-16T17:08:12 WIB" name="openBrowser" finished-at="2025-06-16T17:08:17 WIB" duration-ms="4777" status="PASS">
+        <test-method is-config="true" signature="openBrowser(java.lang.String)[pri:0, instance:selenium_scenario.CheckOutFlowE2E@66749eea]" started-at="2025-06-16T17:20:18 WIB" name="openBrowser" finished-at="2025-06-16T17:20:23 WIB" duration-ms="5502" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,34 +18,38 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="successfulLogin()[pri:0, instance:selenium_scenario.CheckOutFlowE2E@65c17e38]" started-at="2025-06-16T17:08:17 WIB" name="successfulLogin" finished-at="2025-06-16T17:08:17 WIB" duration-ms="402" status="PASS">
+        <test-method signature="successfulLogin()[pri:0, instance:selenium_scenario.CheckOutFlowE2E@66749eea]" started-at="2025-06-16T17:20:24 WIB" name="successfulLogin" finished-at="2025-06-16T17:20:24 WIB" duration-ms="409" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successfulLogin -->
-        <test-method signature="searchAndViewProduct()[pri:0, instance:selenium_scenario.CheckOutFlowE2E@65c17e38]" started-at="2025-06-16T17:08:17 WIB" name="searchAndViewProduct" finished-at="2025-06-16T17:08:20 WIB" depends-on-methods="selenium_scenario.CheckOutFlowE2E.successfulLogin" duration-ms="3184" status="PASS">
+        <test-method signature="searchAndViewProduct()[pri:0, instance:selenium_scenario.CheckOutFlowE2E@66749eea]" started-at="2025-06-16T17:20:24 WIB" name="searchAndViewProduct" finished-at="2025-06-16T17:20:27 WIB" depends-on-methods="selenium_scenario.CheckOutFlowE2E.successfulLogin" duration-ms="3198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchAndViewProduct -->
-        <test-method signature="verifyDataProductInProductViewPage()[pri:0, instance:selenium_scenario.CheckOutFlowE2E@65c17e38]" started-at="2025-06-16T17:08:20 WIB" name="verifyDataProductInProductViewPage" finished-at="2025-06-16T17:08:20 WIB" depends-on-methods="selenium_scenario.CheckOutFlowE2E.searchAndViewProduct" duration-ms="90" status="PASS">
+        <test-method signature="verifyDataProductInProductViewPage()[pri:0, instance:selenium_scenario.CheckOutFlowE2E@66749eea]" started-at="2025-06-16T17:20:27 WIB" name="verifyDataProductInProductViewPage" finished-at="2025-06-16T17:20:27 WIB" depends-on-methods="selenium_scenario.CheckOutFlowE2E.searchAndViewProduct" duration-ms="350" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDataProductInProductViewPage -->
-        <test-method signature="doATCAndOpenCartPage()[pri:0, instance:selenium_scenario.CheckOutFlowE2E@65c17e38]" started-at="2025-06-16T17:08:20 WIB" name="doATCAndOpenCartPage" finished-at="2025-06-16T17:08:29 WIB" depends-on-methods="selenium_scenario.CheckOutFlowE2E.verifyDataProductInProductViewPage" duration-ms="8138" status="PASS">
+        <test-method signature="doATCAndOpenCartPage()[pri:0, instance:selenium_scenario.CheckOutFlowE2E@66749eea]" started-at="2025-06-16T17:20:27 WIB" name="doATCAndOpenCartPage" finished-at="2025-06-16T17:20:36 WIB" depends-on-methods="selenium_scenario.CheckOutFlowE2E.verifyDataProductInProductViewPage" duration-ms="8156" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doATCAndOpenCartPage -->
-        <test-method signature="doCheckout()[pri:0, instance:selenium_scenario.CheckOutFlowE2E@65c17e38]" started-at="2025-06-16T17:08:29 WIB" name="doCheckout" finished-at="2025-06-16T17:08:29 WIB" depends-on-methods="selenium_scenario.CheckOutFlowE2E.doATCAndOpenCartPage" duration-ms="393" status="PASS">
+        <test-method signature="doCheckout()[pri:0, instance:selenium_scenario.CheckOutFlowE2E@66749eea]" started-at="2025-06-16T17:20:36 WIB" name="doCheckout" finished-at="2025-06-16T17:20:36 WIB" depends-on-methods="selenium_scenario.CheckOutFlowE2E.doATCAndOpenCartPage" duration-ms="386" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doCheckout -->
-        <test-method signature="doPlaceOrder()[pri:0, instance:selenium_scenario.CheckOutFlowE2E@65c17e38]" started-at="2025-06-16T17:08:29 WIB" name="doPlaceOrder" finished-at="2025-06-16T17:08:30 WIB" depends-on-methods="selenium_scenario.CheckOutFlowE2E.doCheckout" duration-ms="514" status="PASS">
+        <test-method signature="doPlaceOrder()[pri:0, instance:selenium_scenario.CheckOutFlowE2E@66749eea]" started-at="2025-06-16T17:20:36 WIB" name="doPlaceOrder" finished-at="2025-06-16T17:20:37 WIB" depends-on-methods="selenium_scenario.CheckOutFlowE2E.doCheckout" duration-ms="556" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doPlaceOrder -->
-        <test-method signature="verifyOrderCreated()[pri:0, instance:selenium_scenario.CheckOutFlowE2E@65c17e38]" started-at="2025-06-16T17:08:30 WIB" name="verifyOrderCreated" finished-at="2025-06-16T17:08:33 WIB" depends-on-methods="selenium_scenario.CheckOutFlowE2E.doPlaceOrder" duration-ms="3065" status="PASS">
+        <test-method signature="verifyOrderCreated()[pri:0, instance:selenium_scenario.CheckOutFlowE2E@66749eea]" started-at="2025-06-16T17:20:37 WIB" name="verifyOrderCreated" finished-at="2025-06-16T17:20:40 WIB" depends-on-methods="selenium_scenario.CheckOutFlowE2E.doPlaceOrder" duration-ms="3066" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOrderCreated -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:selenium_scenario.CheckOutFlowE2E@66749eea]" started-at="2025-06-16T17:20:45 WIB" name="tearDown" finished-at="2025-06-16T17:20:45 WIB" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- selenium_scenario.CheckOutFlowE2E -->
     </test> <!-- SeleniumScenario -->
   </suite> <!-- SeleniumScenarioSuite -->
