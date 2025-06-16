@@ -15,6 +15,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 
@@ -242,6 +243,11 @@ class CheckOutFlowE2E{
         Assert.assertEquals(successMessage.getText(), "THANKYOU FOR THE ORDER.", "Success message is wrong");
         Assert.assertEquals(productNameonOrderCreated.getText(), productName, "Product name doesn't match");
         Assert.assertEquals(productPriceonOrderCreated.getText(), productPrice, "Product price doesn't match");
+    }
+
+    @AfterSuite
+    public void tearDown(){
+        webDriver.quit();
     }
 
 }
