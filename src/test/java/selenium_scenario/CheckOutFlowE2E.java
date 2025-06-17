@@ -53,12 +53,69 @@ class CheckOutFlowE2E{
 
         Assert.assertEquals(loginPage, "We Make Your Shopping Simple", "Login page text doesn't exist");
 
-        email = "testerA@gmail.com";
-        password = "P@ssword!1";
+        // email = "testerA@gmail.com";
+        // password = "P@ssword!1";
         productName = "IPHONE 13 PRO";
     }
 
-    @Test()
+    @Test
+    public void successfulRegister() {
+        System.out.println("Valid registering data is running");
+
+        WebElement buttonRegisterHere = webDriver.findElement(By.xpath("//section//descendant::p[@class='login-wrapper-footer-text']"));
+    
+        wait.until(d -> buttonRegisterHere.isDisplayed());
+        buttonRegisterHere.click();
+
+        WebElement registerPageTitle = webDriver.findElement(By.xpath("//h1[@class='login-title']"));
+        WebElement inputFirstName = webDriver.findElement(By.id("firstName"));
+        WebElement inputLastName = webDriver.findElement(By.id("lastName"));
+        WebElement inputEmail = webDriver.findElement(By.id("userEmail"));
+        WebElement inputPhoneNumber = webDriver.findElement(By.id("userMobile"));
+        WebElement selectOccupation = webDriver.findElement(By.xpath("//select[@formcontrolname='occupation']"));
+        WebElement occupationWithDoctor = webDriver.findElement(By.xpath("//option[text()='Doctor']"));
+        WebElement occupationWithStudent = webDriver.findElement(By.xpath("//option[text()='Student']"));
+        WebElement occupationWithEngineer = webDriver.findElement(By.xpath("//option[text()='Engineer']"));
+        WebElement occupationWithScientist = webDriver.findElement(By.xpath("//option[text()='Scientist']"));
+        WebElement genderMale = webDriver.findElement(By.xpath("//input[@value='Male']"));
+        WebElement genderFemale = webDriver.findElement(By.xpath("//input[@value='Male']"));
+        WebElement inputPassword = webDriver.findElement(By.id("userPassword"));
+        WebElement inputConfirmPassword = webDriver.findElement(By.id("confirmPassword"));
+        WebElement checkboxTnC = webDriver.findElement(By.xpath("//input[@type='checkbox']"));
+        WebElement buttonRegister = webDriver.findElement(By.id("login"));
+       
+        wait.until(d -> registerPageTitle.isDisplayed());
+        inputFirstName.sendKeys("User");
+        inputLastName.sendKeys("Tester");
+
+        String uniqueId = UUID.randomUUID().toString().substring(0, 3);
+        email =  "testuser_" + uniqueId + "@example.com";
+        inputEmail.sendKeys(email);
+
+        inputPhoneNumber.sendKeys("9191239912");
+        selectOccupation.click();
+        occupationWithEngineer.click();
+        genderFemale.click();
+
+        password = "P@ssword!1";
+        inputPassword.sendKeys(password);
+        inputConfirmPassword.sendKeys(password);
+        checkboxTnC.click();
+        buttonRegister.click();
+
+        WebElement successMessage = webDriver.findElement(By.xpath("//h1[@class='headcolor']"));
+        WebElement buttonLogin = webDriver.findElement(By.xpath("//button[text()='Login']"));
+
+        Assert.assertEquals(successMessage.getText(), "Account Created Successfully", "The message doesn't match");
+
+        buttonLogin.click();
+
+        String loginPage = webDriver.findElement(By.xpath("//div[@class='banner']//h3")).getText();
+
+        Assert.assertEquals(loginPage, "We Make Your Shopping Simple", "Login page text doesn't exist");
+    }
+
+    @Test(dependsOnMethods = "successfulRegister")
     public void successfulLogin(){
         System.out.println("Valid credentials test is running.");
 

@@ -6,14 +6,16 @@
     <classes>
       <class name="selenium_scenario.CheckOutFlowE2E">
         <methods>
+          <include name="tearDown"/>
           <include name="verifyOrderCreated"/>
           <include name="openBrowser"/>
           <include name="doATCAndOpenCartPage"/>
           <include name="verifyDataProductInProductViewPage"/>
           <include name="searchAndViewProduct"/>
+          <include name="successfulRegister"/>
           <include name="successfulLogin"/>
-          <include name="doCheckout"/>
           <include name="doPlaceOrder"/>
+          <include name="doCheckout"/>
         </methods>
       </class> <!-- selenium_scenario.CheckOutFlowE2E -->
     </classes>
