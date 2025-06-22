@@ -10,3 +10,6 @@
 /Users/salsa/Documents/AfterOffice/ProjectTests/Project1/src/main/java/com/demo/testng/program/model/ResponseModel/PartiallyUpdateObjectResponse.java
 /Users/salsa/Documents/AfterOffice/ProjectTests/Project1/src/main/java/com/demo/testng/program/model/ResponseModel/RegisterResponse.java
 /Users/salsa/Documents/AfterOffice/ProjectTests/Project1/src/main/java/com/demo/testng/program/model/ResponseModel/UpdateObjectResponse.java
+/Users/salsa/Documents/AfterOffice/ProjectTests/Project1/src/main/java/com/demo/testng/program/selenium_page_factory/base/BaseObject.java
+/Users/salsa/Documents/AfterOffice/ProjectTests/Project1/src/main/java/com/demo/testng/program/selenium_page_factory/base/BasePage.java
+/Users/salsa/Documents/AfterOffice/ProjectTests/Project1/src/main/java/com/demo/testng/program/selenium_page_factory/base/BaseTestSuite.java

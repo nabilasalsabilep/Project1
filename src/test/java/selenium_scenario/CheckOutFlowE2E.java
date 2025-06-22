@@ -10,8 +10,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -78,7 +76,7 @@ class CheckOutFlowE2E{
         WebElement occupationWithEngineer = webDriver.findElement(By.xpath("//option[text()='Engineer']"));
         WebElement occupationWithScientist = webDriver.findElement(By.xpath("//option[text()='Scientist']"));
         WebElement genderMale = webDriver.findElement(By.xpath("//input[@value='Male']"));
-        WebElement genderFemale = webDriver.findElement(By.xpath("//input[@value='Male']"));
+        WebElement genderFemale = webDriver.findElement(By.xpath("//input[@value='Female']"));
         WebElement inputPassword = webDriver.findElement(By.id("userPassword"));
         WebElement inputConfirmPassword = webDriver.findElement(By.id("confirmPassword"));
         WebElement checkboxTnC = webDriver.findElement(By.xpath("//input[@type='checkbox']"));

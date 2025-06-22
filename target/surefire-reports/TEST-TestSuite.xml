@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="25.78" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="96.846" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
-    <property name="webdriver.chrome.driver" value="/Users/salsa/.cache/selenium/chromedriver/mac-arm64/137.0.7151.70/chromedriver"/>
+    <property name="webdriver.chrome.driver" value="/Users/salsa/.cache/selenium/chromedriver/mac-arm64/137.0.7151.119/chromedriver"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.class.path" value="/Users/salsa/Library/Application Support/Code/User/globalStorage/pleiades.java-extension-pack-jdk/maven/latest/boot/plexus-classworlds-2.9.0.jar"/>
     <property name="java.vm.vendor" value="Homebrew"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ID"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk@21/21.0.6/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -DsuiteXml=selenium_scenario_suite.xml"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -DsuiteXml=selenium_page_factory/runner_regression.xml"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="maven.home" value="/Users/salsa/Library/Application Support/Code/User/globalStorage/pleiades.java-extension-pack-jdk/maven/latest"/>
@@ -43,11 +43,13 @@
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="browser" value="chrome"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
     <property name="java.vendor.version" value="Homebrew"/>
+    <property name="email" value="&quot;testerA@gmail.com&quot;"/>
     <property name="localRepository" value="/Users/salsa/.m2/repository"/>
     <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
-    <property name="suiteXml" value="selenium_scenario_suite.xml"/>
+    <property name="suiteXml" value="selenium_page_factory/runner_regression.xml"/>
     <property name="java.io.tmpdir" value="/var/folders/0h/063c3np959bbg7_4pknqdjfr0000gn/T/"/>
     <property name="java.version" value="21.0.6"/>
     <property name="user.dir" value="/Users/salsa/Documents/AfterOffice/ProjectTests/Project1"/>
@@ -66,27 +68,48 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="successfulRegister" classname="selenium_scenario.CheckOutFlowE2E" time="0.767">
+  <testcase name="runScenario[&quot;&quot;, &quot;Checkout Flow&quot;](1)" classname="selenium_page_factory.test_suite_cucumber.runner.CucumberRunner" time="91.089">
     <system-out><![CDATA[...
 ... TestNG 7.11.0 by Cédric Beust (cedric@beust.com)
 ...
 
-Browser Start...
-Valid registering data is running
+
+Scenario:                                                                                                                                                                # src/test/resources/selenium_page_factory/checkout_flow.feature:7
+beforeScenario
+env: staging
+Current Directory = /Users/salsa/Documents/AfterOffice/ProjectTests/Project1
+chrome
+null
+selenium_page_factory/runner_regression.xml
+  Given Open "https://rahulshettyacademy.com/client"                                                                                                                     # selenium_page_factory.test_suite_cucumber.definitions.GeneralDefinitions.openUrl(java.lang.String)
+  Then Init all pages for run automation for checkout flow                                                                                                               # selenium_page_factory.test_suite_cucumber.definitions.CheckoutFlowE2E.initAllPages()
+  When Click button Register on Login page                                                                                                                               # selenium_page_factory.test_suite_cucumber.definitions.CheckoutFlowE2E.clickButtonRegisterfromLoginPage()
+  And Input first name, last name, phone number, select occupation with engineer, select female gender                                                                   # selenium_page_factory.test_suite_cucumber.definitions.CheckoutFlowE2E.fillInRequiredData()
+  And Input password & confirm password "P@ssword!1"                                                                                                                     # selenium_page_factory.test_suite_cucumber.definitions.CheckoutFlowE2E.fillInPasswordandConfrimPassword(java.lang.String)
+  And Click TnC checkbox on Register page                                                                                                                                # selenium_page_factory.test_suite_cucumber.definitions.CheckoutFlowE2E.clickTnCCheckbox()
+  And Click button Register for register new account                                                                                                                     # selenium_page_factory.test_suite_cucumber.definitions.CheckoutFlowE2E.clickButtonRegister()
+  And Click button Login to open the Login page                                                                                                                          # selenium_page_factory.test_suite_cucumber.definitions.CheckoutFlowE2E.clickButtonLoginAfterRegister()
+  Then Input email "{email}" and password "P@ssword!1" in login page for checkout flow                                                                                   # selenium_page_factory.test_suite_cucumber.definitions.CheckoutFlowE2E.inputEmailAndPassword(java.lang.String,java.lang.String)
+  Then Click login button for checkout flow                                                                                                                              # selenium_page_factory.test_suite_cucumber.definitions.CheckoutFlowE2E.clickButtonLogin()
+  Then Search product with keyword "IPHONE" for checkout flow                                                                                                            # selenium_page_factory.test_suite_cucumber.definitions.CheckoutFlowE2E.searchProduct(java.lang.String)
+  Then Verify the product name contains inputted keyword                                                                                                                 # selenium_page_factory.test_suite_cucumber.definitions.CheckoutFlowE2E.verifySearchResult()
+  Then Click view product for checkout flow                                                                                                                              # selenium_page_factory.test_suite_cucumber.definitions.CheckoutFlowE2E.clickViewProduct()
+  And Verify product name, to make sure the product name contains inputted keyword is shown for checkout flow                                                            # selenium_page_factory.test_suite_cucumber.definitions.CheckoutFlowE2E.verifyProductDisplayTitle()
+  And Verify product price is the same as the price on the dashboard                                                                                                     # selenium_page_factory.test_suite_cucumber.definitions.CheckoutFlowE2E.verifyProductDisplayPrice()
+  Then Click Add to Cart button for checkout flow                                                                                                                        # selenium_page_factory.test_suite_cucumber.definitions.CheckoutFlowE2E.clickButtonAddToCartfromProductDisplay()
+  Then Verify product name, product price on Cart page are the same as the data from product display                                                                     # selenium_page_factory.test_suite_cucumber.definitions.CheckoutFlowE2E.verifyCartPage()
+  Then Click checkout button for checkout flow                                                                                                                           # selenium_page_factory.test_suite_cucumber.definitions.CheckoutFlowE2E.clickButtonCheckout()
+  Then Verify credit card number is match with "4542 9931 9292 2293"                                                                                                     # selenium_page_factory.test_suite_cucumber.definitions.CheckoutFlowE2E.verifyCreditCardNumber(java.lang.String)
+  Then Verify email is match with "{email}"                                                                                                                              # selenium_page_factory.test_suite_cucumber.definitions.CheckoutFlowE2E.verifyEmailonChekcoutPage(java.lang.String)
+  Then Enter the details payment for checkout flow                                                                                                                       # selenium_page_factory.test_suite_cucumber.definitions.CheckoutFlowE2E.enterPaymentDetails()
+  Then Click place order button for checkout flow                                                                                                                        # selenium_page_factory.test_suite_cucumber.definitions.CheckoutFlowE2E.clickButtonPlaceOrder()
+  And Verify order, to make sure product name contains inputted keyword with product price that is same as the product price from the checkout page successfully ordered # selenium_page_factory.test_suite_cucumber.definitions.CheckoutFlowE2E.verifyOrder()
+  Then Delay for 2 seconds                                                                                                                                               # selenium_page_factory.test_suite_cucumber.definitions.GeneralDefinitions.delay(int)
+afterScenario
 ]]></system-out>
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="successfulLogin" classname="selenium_scenario.CheckOutFlowE2E" time="0.312">
-    <system-out><![CDATA[Valid credentials test is running.
-]]></system-out>
-  </testcase>
-  <testcase name="searchAndViewProduct" classname="selenium_scenario.CheckOutFlowE2E" time="3.154"/>
-  <testcase name="verifyDataProductInProductViewPage" classname="selenium_scenario.CheckOutFlowE2E" time="0.144"/>
-  <testcase name="doATCAndOpenCartPage" classname="selenium_scenario.CheckOutFlowE2E" time="8.154"/>
-  <testcase name="doCheckout" classname="selenium_scenario.CheckOutFlowE2E" time="0.187"/>
-  <testcase name="doPlaceOrder" classname="selenium_scenario.CheckOutFlowE2E" time="0.496"/>
-  <testcase name="verifyOrderCreated" classname="selenium_scenario.CheckOutFlowE2E" time="3.068"/>
 </testsuite>
